@@ -1,0 +1,9 @@
+<h1>Articles</h1>
+<ul>
+{% for article in object_list %}
+{% load markdown_deux_tags %} 
+    <li>{{ article.content|markdown  }} - {{ article.auther }}</li>
+{% empty %}
+    <li>No articles yet.</li>
+{% endfor %}
+</ul>
