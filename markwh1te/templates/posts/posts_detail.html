@@ -1,0 +1,6 @@
+<h1>{{ object.title }}</h1>
+<ul>
+{% load markdown_deux_tags %} 
+    
+    <li>{{ object.content|markdown|truncatechars:100  }} - {{ object.title }}</li>
+</ul>
