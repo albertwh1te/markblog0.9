@@ -1,0 +1,25 @@
+a {
+  font-size:60px;
+  color:black;
+}
+a:hover {
+  text-decoration: none;
+  color:blue;
+}
+nav {
+  color:white;
+}
+nav:hover {
+  text-decoration: none;
+  color:pink;
+}
+.navbar-custom {
+    color: #FFFFFF;
+    background-color:#2196F3 ;
+    border-radius:0;
+}
+.navbar-brand >img {
+  width: 25%;
+  height: auto;
+  padding-top: 0%;
+}
