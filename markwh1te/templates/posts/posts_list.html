@@ -1,12 +1,22 @@
 {% extends "base.html" %}
 
+{% block title %} Home {% endblock %}
 {% block content %}
+<center>
 <ul>
 {% for article in object_list %}
 {% load markdown_deux_tags %} 
-    <li>{{ article.content|markdown|truncatechars:30  }} - {{ article.auther }}</li>
+  <a class="list_text" href="{% url 'posts_detail' article.id %}">
+    <div class="jumbotron">
+      <h1>{{ article.title }}</h1>
+    </a>
+      <x>  {{ article.create_time |date }} </x>
+      <x >{{ article.content|markdown|truncatechars:300  }}</x>
+      <a class="btn btn-default btn-sm" href="{% url 'posts_detail' article.id %}" role="button">read more</a> 
+    </div>
 {% empty %}
-    <li>No articles yet.</li>
+    <a>No articles yet.</a>
 {% endfor %}
 </ul>
+</center>
 {% endblock %}

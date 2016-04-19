@@ -1,25 +1,54 @@
-a {
-  font-size:60px;
-  color:black;
-}
-a:hover {
+/*a:hover {
   text-decoration: none;
   color:blue;
-}
-nav {
+}*/
+/*nav {
   color:white;
-}
-nav:hover {
+}*/
+/*nav:hover {
   text-decoration: none;
   color:pink;
-}
-.navbar-custom {
-    color: #FFFFFF;
-    background-color:#2196F3 ;
-    border-radius:0;
-}
+}*/
 .navbar-brand >img {
   width: 25%;
   height: auto;
   padding-top: 0%;
 }
+.headname {
+  font-size: 220%;
+}
+.navbar-collapse {
+  text-align:center;
+}
+.navbar-nav {
+    display:inline-block;
+    float:none;
+}
+.list_text {
+  color:black;
+  text-decoration: none;
+}
+.list_text :hover {
+  color:#929292;
+  text-decoration: none;
+}
+.list_text :link {
+  color:#929292;
+  text-decoration: none;
+}
+.list_text :visited {
+  color:#929292;
+  text-decoration: none;
+}
+.list_text :active {
+  color:#929292;
+  text-decoration: none;
+}
+  
+/*.nav-list {
+  color:#666666;
+}*/
+/*.nav-list :hover {
+  color:#666666 !important;
+}
+*/
