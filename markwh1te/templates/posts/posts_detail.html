@@ -7,10 +7,10 @@
 <h1 class="titles" >{{ object.title }}</h1><br>
 <x>  {{ object.create_time |date }} </x>
 
+</center>
 {% load markdown_deux_tags %} 
     
     <d class="shortcontent" >{{ object.content|markdown }} - {{ object.title }}</d>
-</center>
 <div id="disqus_thread"></div>
 <script>
 /**
