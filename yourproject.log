@@ -1,0 +1,1057 @@
+*** Starting uWSGI 2.0.12 (64bit) on [Tue Apr 19 16:54:39 2016] ***
+compiled with version: 4.8.4 on 19 April 2016 11:58:14
+os: Linux-3.13.0-83-generic #127-Ubuntu SMP Fri Mar 11 00:25:37 UTC 2016
+nodename: markvps
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /webapp/markblog0.9/markwh1te
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /webapp/markblog0.9/markwh1te
+your processes number limit is 5764
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /tmp/markwh1te.sock fd 3
+Python version: 2.7.6 (default, Jun 22 2015, 18:01:27)  [GCC 4.8.2]
+Set PythonHome to /webapp/markblog0.9/env
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x26e5b20
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 800360 bytes (781 KB) for 10 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x26e5b20 pid: 17089 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 17089)
+spawned uWSGI worker 1 (pid: 17092, cores: 1)
+spawned uWSGI worker 2 (pid: 17093, cores: 1)
+spawned uWSGI worker 3 (pid: 17094, cores: 1)
+spawned uWSGI worker 4 (pid: 17095, cores: 1)
+spawned uWSGI worker 5 (pid: 17096, cores: 1)
+spawned uWSGI worker 6 (pid: 17097, cores: 1)
+spawned uWSGI worker 7 (pid: 17098, cores: 1)
+spawned uWSGI worker 8 (pid: 17099, cores: 1)
+spawned uWSGI worker 9 (pid: 17100, cores: 1)
+spawned uWSGI worker 10 (pid: 17101, cores: 1)
+[pid: 17094|app: 0|req: 1/1] 107.191.42.169 () {42 vars in 737 bytes} [Tue Apr 19 16:54:58 2016] GET /1/ => generated 3416 bytes in 43 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17101|app: 0|req: 1/2] 107.191.42.169 () {42 vars in 735 bytes} [Tue Apr 19 16:55:11 2016] GET / => generated 3127 bytes in 53 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17099|app: 0|req: 1/3] 107.191.42.169 () {42 vars in 737 bytes} [Tue Apr 19 16:55:18 2016] GET /1/ => generated 3416 bytes in 51 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17101|app: 0|req: 2/4] 107.191.42.169 () {42 vars in 735 bytes} [Tue Apr 19 16:55:53 2016] GET / => generated 3127 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17100|app: 0|req: 1/5] 107.191.42.169 () {42 vars in 737 bytes} [Tue Apr 19 16:55:57 2016] GET /1/ => generated 3416 bytes in 51 msecs (HTTP/1.1 200) 2 headers in 88 bytes (2 switches on core 0)
+[pid: 17101|app: 0|req: 3/6] 107.191.42.169 () {42 vars in 735 bytes} [Tue Apr 19 16:56:01 2016] GET / => generated 3127 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17099|app: 0|req: 2/7] 107.191.42.169 () {42 vars in 736 bytes} [Tue Apr 19 16:56:10 2016] GET / => generated 3127 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17100|app: 0|req: 2/8] 107.191.42.169 () {42 vars in 740 bytes} [Tue Apr 19 16:56:12 2016] GET /1/ => generated 3416 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 88 bytes (2 switches on core 0)
+[pid: 17098|app: 0|req: 1/9] 107.191.42.169 () {42 vars in 738 bytes} [Tue Apr 19 16:56:16 2016] GET / => generated 3127 bytes in 53 msecs (HTTP/1.1 200) 2 headers in 88 bytes (2 switches on core 0)
+[pid: 17101|app: 0|req: 4/10] 107.191.42.169 () {40 vars in 702 bytes} [Tue Apr 19 16:56:27 2016] GET /admin => generated 0 bytes in 0 msecs (HTTP/1.1 301) 3 headers in 122 bytes (1 switches on core 0)
+[pid: 17092|app: 0|req: 1/11] 107.191.42.169 () {40 vars in 704 bytes} [Tue Apr 19 16:56:27 2016] GET /admin/ => generated 0 bytes in 38 msecs (HTTP/1.1 302) 7 headers in 292 bytes (1 switches on core 0)
+Internal Server Error: /admin/login/
+Traceback (most recent call last):
+  File "/webapp/markblog0.9/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 174, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/webapp/markblog0.9/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 172, in get_response
+    response = response.render()
+  File "/webapp/markblog0.9/env/lib/python2.7/site-packages/django/template/response.py", line 160, in render
+    self.content = self.rendered_content
+  File "/webapp/markblog0.9/env/lib/python2.7/site-packages/django/template/response.py", line 137, in rendered_content
+    content = template.render(context, self._request)
+  File "/webapp/markblog0.9/env/lib/python2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/webapp/markblog0.9/env/lib/python2.7/site-packages/django/template/base.py", line 206, in render
+    return self._render(context)
+  File "/webapp/markblog0.9/env/lib/python2.7/site-packages/django/template/base.py", line 197, in _render
+    return self.nodelist.render(context)
+  File "/webapp/markblog0.9/env/lib/python2.7/site-packages/django/template/base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "/webapp/markblog0.9/env/lib/python2.7/site-packages/django/template/base.py", line 959, in render_annotated
+    return self.render(context)
+  File "/webapp/markblog0.9/env/lib/python2.7/site-packages/django/template/loader_tags.py", line 173, in render
+    return compiled_parent._render(context)
+  File "/webapp/markblog0.9/env/lib/python2.7/site-packages/django/template/base.py", line 197, in _render
+    return self.nodelist.render(context)
+  File "/webapp/markblog0.9/env/lib/python2.7/site-packages/django/template/base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "/webapp/markblog0.9/env/lib/python2.7/site-packages/django/template/base.py", line 959, in render_annotated
+    return self.render(context)
+  File "/webapp/markblog0.9/env/lib/python2.7/site-packages/django/template/loader_tags.py", line 173, in render
+    return compiled_parent._render(context)
+  File "/webapp/markblog0.9/env/lib/python2.7/site-packages/django/template/base.py", line 197, in _render
+    return self.nodelist.render(context)
+  File "/webapp/markblog0.9/env/lib/python2.7/site-packages/django/template/base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "/webapp/markblog0.9/env/lib/python2.7/site-packages/django/template/base.py", line 959, in render_annotated
+    return self.render(context)
+  File "/webapp/markblog0.9/env/lib/python2.7/site-packages/django/template/loader_tags.py", line 69, in render
+    result = block.nodelist.render(context)
+  File "/webapp/markblog0.9/env/lib/python2.7/site-packages/django/template/base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "/webapp/markblog0.9/env/lib/python2.7/site-packages/django/template/base.py", line 959, in render_annotated
+    return self.render(context)
+  File "/webapp/markblog0.9/env/lib/python2.7/site-packages/django/template/library.py", line 201, in render
+    output = self.func(*resolved_args, **resolved_kwargs)
+  File "/webapp/markblog0.9/env/lib/python2.7/site-packages/django/contrib/admin/templatetags/admin_static.py", line 17, in static
+    return _static(path)
+  File "/webapp/markblog0.9/env/lib/python2.7/site-packages/django/contrib/staticfiles/templatetags/staticfiles.py", line 9, in static
+    return staticfiles_storage.url(path)
+  File "/webapp/markblog0.9/env/lib/python2.7/site-packages/django/utils/functional.py", line 204, in inner
+    self._setup()
+  File "/webapp/markblog0.9/env/lib/python2.7/site-packages/django/contrib/staticfiles/storage.py", line 394, in _setup
+    self._wrapped = get_storage_class(settings.STATICFILES_STORAGE)()
+  File "/webapp/markblog0.9/env/lib/python2.7/site-packages/django/contrib/staticfiles/storage.py", line 37, in __init__
+    check_settings(base_url)
+  File "/webapp/markblog0.9/env/lib/python2.7/site-packages/django/contrib/staticfiles/utils.py", line 55, in check_settings
+    raise ImproperlyConfigured("The MEDIA_URL and STATIC_URL "
+ImproperlyConfigured: The MEDIA_URL and STATIC_URL settings must have different values
+[pid: 17101|app: 0|req: 5/12] 107.191.42.169 () {40 vars in 741 bytes} [Tue Apr 19 16:56:28 2016] GET /admin/login/?next=/admin/ => generated 176207 bytes in 93 msecs (HTTP/1.1 500) 3 headers in 106 bytes (1 switches on core 0)
+*** Starting uWSGI 2.0.12 (64bit) on [Tue Apr 19 16:57:31 2016] ***
+compiled with version: 4.8.4 on 19 April 2016 11:58:14
+os: Linux-3.13.0-83-generic #127-Ubuntu SMP Fri Mar 11 00:25:37 UTC 2016
+nodename: markvps
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /webapp/markblog0.9/markwh1te
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /webapp/markblog0.9/markwh1te
+your processes number limit is 5764
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /tmp/markwh1te.sock fd 3
+Python version: 2.7.6 (default, Jun 22 2015, 18:01:27)  [GCC 4.8.2]
+Set PythonHome to /webapp/markblog0.9/env
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x1126b20
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 800360 bytes (781 KB) for 10 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x1126b20 pid: 17182 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 17182)
+spawned uWSGI worker 1 (pid: 17185, cores: 1)
+spawned uWSGI worker 2 (pid: 17186, cores: 1)
+spawned uWSGI worker 3 (pid: 17187, cores: 1)
+spawned uWSGI worker 4 (pid: 17188, cores: 1)
+spawned uWSGI worker 5 (pid: 17189, cores: 1)
+spawned uWSGI worker 6 (pid: 17190, cores: 1)
+spawned uWSGI worker 7 (pid: 17191, cores: 1)
+spawned uWSGI worker 8 (pid: 17192, cores: 1)
+spawned uWSGI worker 9 (pid: 17193, cores: 1)
+spawned uWSGI worker 10 (pid: 17194, cores: 1)
+[pid: 17187|app: 0|req: 1/1] 107.191.42.169 () {40 vars in 741 bytes} [Tue Apr 19 16:57:43 2016] GET /admin/login/?next=/admin/ => generated 1679 bytes in 41 msecs (HTTP/1.1 200) 7 headers in 373 bytes (2 switches on core 0)
+[pid: 17185|app: 0|req: 1/2] 107.191.42.169 () {44 vars in 790 bytes} [Tue Apr 19 16:57:47 2016] GET / => generated 3127 bytes in 53 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17194|app: 0|req: 1/3] 107.191.42.169 () {42 vars in 759 bytes} [Tue Apr 19 16:57:52 2016] GET /admin => generated 0 bytes in 26 msecs (HTTP/1.1 301) 3 headers in 122 bytes (1 switches on core 0)
+[pid: 17185|app: 0|req: 2/4] 107.191.42.169 () {42 vars in 761 bytes} [Tue Apr 19 16:57:53 2016] GET /admin/ => generated 0 bytes in 7 msecs (HTTP/1.1 302) 7 headers in 292 bytes (1 switches on core 0)
+[pid: 17194|app: 0|req: 2/5] 107.191.42.169 () {42 vars in 798 bytes} [Tue Apr 19 16:57:53 2016] GET /admin/login/?next=/admin/ => generated 1679 bytes in 21 msecs (HTTP/1.1 200) 7 headers in 373 bytes (1 switches on core 0)
+[pid: 17185|app: 0|req: 3/6] 107.191.42.169 () {50 vars in 1014 bytes} [Tue Apr 19 16:58:03 2016] POST /admin/login/?next=/admin/ => generated 0 bytes in 79 msecs (HTTP/1.1 302) 9 headers in 526 bytes (1 switches on core 0)
+[pid: 17194|app: 0|req: 3/7] 107.191.42.169 () {44 vars in 871 bytes} [Tue Apr 19 16:58:04 2016] GET /admin/ => generated 5536 bytes in 25 msecs (HTTP/1.1 200) 6 headers in 251 bytes (1 switches on core 0)
+*** Starting uWSGI 2.0.12 (64bit) on [Tue Apr 19 17:05:21 2016] ***
+compiled with version: 4.8.4 on 19 April 2016 11:58:14
+os: Linux-3.13.0-83-generic #127-Ubuntu SMP Fri Mar 11 00:25:37 UTC 2016
+nodename: markvps
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /webapp/markblog0.9/markwh1te
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /webapp/markblog0.9/markwh1te
+your processes number limit is 5764
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /tmp/markwh1te.sock fd 3
+Python version: 2.7.6 (default, Jun 22 2015, 18:01:27)  [GCC 4.8.2]
+Set PythonHome to /webapp/markblog0.9/env
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x2430b20
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 800360 bytes (781 KB) for 10 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x2430b20 pid: 17376 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 17376)
+spawned uWSGI worker 1 (pid: 17379, cores: 1)
+spawned uWSGI worker 2 (pid: 17380, cores: 1)
+spawned uWSGI worker 3 (pid: 17381, cores: 1)
+spawned uWSGI worker 4 (pid: 17382, cores: 1)
+spawned uWSGI worker 5 (pid: 17383, cores: 1)
+spawned uWSGI worker 6 (pid: 17384, cores: 1)
+spawned uWSGI worker 7 (pid: 17385, cores: 1)
+spawned uWSGI worker 8 (pid: 17386, cores: 1)
+spawned uWSGI worker 9 (pid: 17387, cores: 1)
+spawned uWSGI worker 10 (pid: 17388, cores: 1)
+[pid: 17383|app: 0|req: 1/1] 107.191.42.169 () {42 vars in 803 bytes} [Tue Apr 19 17:05:40 2016] GET /admin => generated 0 bytes in 21 msecs (HTTP/1.1 301) 3 headers in 122 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 1/2] 107.191.42.169 () {42 vars in 805 bytes} [Tue Apr 19 17:05:41 2016] GET /admin/ => generated 5536 bytes in 56 msecs (HTTP/1.1 200) 6 headers in 251 bytes (1 switches on core 0)
+[pid: 17388|app: 0|req: 1/3] 107.191.42.169 () {42 vars in 793 bytes} [Tue Apr 19 17:05:46 2016] GET / => generated 3127 bytes in 65 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 2/4] 107.191.42.169 () {42 vars in 805 bytes} [Tue Apr 19 17:05:50 2016] GET /admin/ => generated 5536 bytes in 18 msecs (HTTP/1.1 200) 6 headers in 251 bytes (1 switches on core 0)
+[pid: 17388|app: 0|req: 2/5] 107.191.42.169 () {44 vars in 876 bytes} [Tue Apr 19 17:05:54 2016] GET /admin/posts/posts/ => generated 4557 bytes in 42 msecs (HTTP/1.1 200) 7 headers in 373 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 3/6] 107.191.42.169 () {42 vars in 772 bytes} [Tue Apr 19 17:05:54 2016] GET /admin/jsi18n/ => generated 3217 bytes in 8 msecs (HTTP/1.1 200) 3 headers in 93 bytes (2 switches on core 0)
+/webapp/markblog0.9/env/lib/python2.7/site-packages/pagedown/widgets.py:55: RemovedInDjango110Warning: render() must be called with a dict, not a Context.
+  return template.render(context)
+
+[pid: 17388|app: 0|req: 3/7] 107.191.42.169 () {44 vars in 906 bytes} [Tue Apr 19 17:05:58 2016] GET /admin/posts/posts/2/change/ => generated 8298 bytes in 35 msecs (HTTP/1.1 200) 7 headers in 373 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 4/8] 107.191.42.169 () {42 vars in 781 bytes} [Tue Apr 19 17:05:58 2016] GET /admin/jsi18n/ => generated 3217 bytes in 4 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
+[pid: 17380|app: 0|req: 1/9] 107.191.42.169 () {44 vars in 915 bytes} [Tue Apr 19 17:06:07 2016] GET /admin/posts/posts/2/delete/ => generated 2380 bytes in 53 msecs (HTTP/1.1 200) 7 headers in 373 bytes (2 switches on core 0)
+[pid: 17379|app: 0|req: 5/10] 107.191.42.169 () {50 vars in 1063 bytes} [Tue Apr 19 17:06:11 2016] POST /admin/posts/posts/2/delete/ => generated 0 bytes in 10 msecs (HTTP/1.1 302) 8 headers in 471 bytes (1 switches on core 0)
+[pid: 17388|app: 0|req: 4/11] 107.191.42.169 () {44 vars in 1052 bytes} [Tue Apr 19 17:06:12 2016] GET /admin/posts/posts/ => generated 4484 bytes in 22 msecs (HTTP/1.1 200) 8 headers in 455 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 6/12] 107.191.42.169 () {42 vars in 772 bytes} [Tue Apr 19 17:06:12 2016] GET /admin/jsi18n/ => generated 3217 bytes in 4 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
+/webapp/markblog0.9/env/lib/python2.7/site-packages/pagedown/widgets.py:55: RemovedInDjango110Warning: render() must be called with a dict, not a Context.
+  return template.render(context)
+
+[pid: 17380|app: 0|req: 2/13] 107.191.42.169 () {44 vars in 906 bytes} [Tue Apr 19 17:06:16 2016] GET /admin/posts/posts/1/change/ => generated 8063 bytes in 35 msecs (HTTP/1.1 200) 7 headers in 373 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 7/14] 107.191.42.169 () {42 vars in 781 bytes} [Tue Apr 19 17:06:16 2016] GET /admin/jsi18n/ => generated 3217 bytes in 5 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
+[pid: 17388|app: 0|req: 5/15] 107.191.42.169 () {44 vars in 946 bytes} [Tue Apr 19 17:06:23 2016] GET /admin/posts/tags/add/?_to_field=id&_popup=1 => generated 3133 bytes in 20 msecs (HTTP/1.1 200) 7 headers in 373 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 8/16] 107.191.42.169 () {42 vars in 797 bytes} [Tue Apr 19 17:06:23 2016] GET /admin/jsi18n/ => generated 3217 bytes in 5 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
+[pid: 17380|app: 0|req: 3/17] 107.191.42.169 () {50 vars in 1182 bytes} [Tue Apr 19 17:06:32 2016] POST /admin/posts/tags/add/?_to_field=id&_popup=1 => generated 229 bytes in 11 msecs (HTTP/1.1 200) 6 headers in 251 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 9/18] 107.191.42.169 () {50 vars in 1137 bytes} [Tue Apr 19 17:11:20 2016] POST /admin/posts/posts/1/change/ => generated 0 bytes in 16 msecs (HTTP/1.1 302) 8 headers in 534 bytes (1 switches on core 0)
+[pid: 17388|app: 0|req: 6/19] 107.191.42.169 () {44 vars in 1115 bytes} [Tue Apr 19 17:11:20 2016] GET /admin/posts/posts/ => generated 4531 bytes in 23 msecs (HTTP/1.1 200) 8 headers in 455 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 10/20] 107.191.42.169 () {42 vars in 772 bytes} [Tue Apr 19 17:11:27 2016] GET /admin/jsi18n/ => generated 3217 bytes in 4 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
+[pid: 17380|app: 0|req: 4/21] 107.191.42.169 () {42 vars in 803 bytes} [Tue Apr 19 17:11:36 2016] GET /admin => generated 0 bytes in 1 msecs (HTTP/1.1 301) 3 headers in 122 bytes (1 switches on core 0)
+[pid: 17386|app: 0|req: 1/22] 107.191.42.169 () {42 vars in 805 bytes} [Tue Apr 19 17:11:36 2016] GET /admin/ => generated 6372 bytes in 56 msecs (HTTP/1.1 200) 6 headers in 251 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 11/23] 107.191.42.169 () {42 vars in 793 bytes} [Tue Apr 19 17:11:40 2016] GET / => generated 3051 bytes in 20 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17388|app: 0|req: 7/24] 107.191.42.169 () {44 vars in 838 bytes} [Tue Apr 19 17:11:46 2016] GET /1/ => generated 3882 bytes in 12 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 12/25] 107.191.42.169 () {44 vars in 838 bytes} [Tue Apr 19 17:13:57 2016] GET /1/ => generated 3866 bytes in 6 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17388|app: 0|req: 8/26] 107.191.42.169 () {44 vars in 906 bytes} [Tue Apr 19 17:14:58 2016] GET /admin/posts/posts/1/change/ => generated 8539 bytes in 33 msecs (HTTP/1.1 200) 7 headers in 373 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 13/27] 107.191.42.169 () {42 vars in 781 bytes} [Tue Apr 19 17:14:59 2016] GET /admin/jsi18n/ => generated 3217 bytes in 4 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
+[pid: 17380|app: 0|req: 5/28] 107.191.42.169 () {44 vars in 946 bytes} [Tue Apr 19 17:15:03 2016] GET /admin/posts/tags/add/?_to_field=id&_popup=1 => generated 3133 bytes in 18 msecs (HTTP/1.1 200) 7 headers in 373 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 14/29] 107.191.42.169 () {42 vars in 797 bytes} [Tue Apr 19 17:15:04 2016] GET /admin/jsi18n/ => generated 3217 bytes in 4 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
+[pid: 17388|app: 0|req: 9/30] 107.191.42.169 () {50 vars in 1137 bytes} [Tue Apr 19 17:15:12 2016] POST /admin/posts/posts/1/change/ => generated 0 bytes in 13 msecs (HTTP/1.1 302) 8 headers in 534 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 15/31] 107.191.42.169 () {44 vars in 1115 bytes} [Tue Apr 19 17:15:12 2016] GET /admin/posts/posts/ => generated 4531 bytes in 27 msecs (HTTP/1.1 200) 8 headers in 455 bytes (1 switches on core 0)
+[pid: 17388|app: 0|req: 10/32] 107.191.42.169 () {42 vars in 772 bytes} [Tue Apr 19 17:15:13 2016] GET /admin/jsi18n/ => generated 3217 bytes in 5 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
+[pid: 17380|app: 0|req: 6/33] 107.191.42.169 () {44 vars in 838 bytes} [Tue Apr 19 17:15:17 2016] GET /1/ => generated 3866 bytes in 20 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 16/34] 107.191.42.169 () {44 vars in 838 bytes} [Tue Apr 19 17:17:03 2016] GET /1/ => generated 3871 bytes in 9 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17388|app: 0|req: 11/35] 107.191.42.169 () {44 vars in 838 bytes} [Tue Apr 19 17:19:16 2016] GET /1/ => generated 3851 bytes in 7 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 17/36] 107.191.42.169 () {44 vars in 836 bytes} [Tue Apr 19 17:19:23 2016] GET / => generated 3051 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17380|app: 0|req: 7/37] 107.191.42.169 () {44 vars in 837 bytes} [Tue Apr 19 17:19:38 2016] GET / => generated 3051 bytes in 7 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 18/38] 107.191.42.169 () {44 vars in 841 bytes} [Tue Apr 19 17:19:42 2016] GET /1/ => generated 3851 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17388|app: 0|req: 12/39] 107.191.42.169 () {44 vars in 837 bytes} [Tue Apr 19 17:19:52 2016] GET / => generated 3051 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17380|app: 0|req: 8/40] 107.191.42.169 () {44 vars in 841 bytes} [Tue Apr 19 17:20:01 2016] GET /1/ => generated 3851 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 19/41] 107.191.42.169 () {44 vars in 839 bytes} [Tue Apr 19 17:20:10 2016] GET / => generated 3051 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17388|app: 0|req: 13/42] 107.191.42.169 () {44 vars in 849 bytes} [Tue Apr 19 17:20:13 2016] GET /about/ => generated 2888 bytes in 2 msecs (HTTP/1.1 200) 2 headers in 88 bytes (2 switches on core 0)
+[pid: 17382|app: 0|req: 1/43] 107.191.42.169 () {44 vars in 849 bytes} [Tue Apr 19 17:21:24 2016] GET /about/ => generated 2888 bytes in 24 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 20/44] 107.191.42.169 () {44 vars in 843 bytes} [Tue Apr 19 17:21:28 2016] GET / => generated 3051 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 88 bytes (2 switches on core 0)
+[pid: 17388|app: 0|req: 14/45] 107.191.42.169 () {44 vars in 855 bytes} [Tue Apr 19 17:21:28 2016] GET /about/ => generated 2888 bytes in 1 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17380|app: 0|req: 9/46] 107.191.42.169 () {44 vars in 843 bytes} [Tue Apr 19 17:21:29 2016] GET / => generated 3051 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 88 bytes (2 switches on core 0)
+[pid: 17387|app: 0|req: 1/47] 107.191.42.169 () {44 vars in 834 bytes} [Tue Apr 19 17:21:33 2016] GET / => generated 3051 bytes in 53 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 21/48] 107.191.42.169 () {44 vars in 838 bytes} [Tue Apr 19 17:21:39 2016] GET /1/ => generated 3851 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17388|app: 0|req: 15/49] 107.191.42.169 () {44 vars in 836 bytes} [Tue Apr 19 17:21:41 2016] GET / => generated 3051 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17380|app: 0|req: 10/50] 107.191.42.169 () {44 vars in 838 bytes} [Tue Apr 19 17:21:45 2016] GET /1/ => generated 3851 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17387|app: 0|req: 2/51] 107.191.42.169 () {44 vars in 836 bytes} [Tue Apr 19 17:21:47 2016] GET / => generated 3051 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 22/52] 107.191.42.169 () {44 vars in 838 bytes} [Tue Apr 19 17:21:49 2016] GET /1/ => generated 3851 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17388|app: 0|req: 16/53] 107.191.42.169 () {44 vars in 848 bytes} [Tue Apr 19 17:22:00 2016] GET /about/ => generated 2888 bytes in 2 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17385|app: 0|req: 1/54] 107.191.42.169 () {44 vars in 840 bytes} [Tue Apr 19 17:22:02 2016] GET / => generated 3051 bytes in 85 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 23/55] 107.191.42.169 () {44 vars in 834 bytes} [Tue Apr 19 17:22:03 2016] GET / => generated 3051 bytes in 6 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17388|app: 0|req: 17/56] 107.191.42.169 () {44 vars in 864 bytes} [Tue Apr 19 17:22:10 2016] GET /admin/ => generated 6682 bytes in 22 msecs (HTTP/1.1 200) 6 headers in 251 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 24/57] 107.191.42.169 () {44 vars in 874 bytes} [Tue Apr 19 17:22:14 2016] GET /admin/posts/tags/ => generated 4549 bytes in 27 msecs (HTTP/1.1 200) 7 headers in 373 bytes (1 switches on core 0)
+[pid: 17388|app: 0|req: 18/58] 107.191.42.169 () {42 vars in 771 bytes} [Tue Apr 19 17:22:15 2016] GET /admin/jsi18n/ => generated 3217 bytes in 5 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
+[pid: 17380|app: 0|req: 11/59] 107.191.42.169 () {42 vars in 793 bytes} [Tue Apr 19 17:22:29 2016] GET / => generated 3051 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 25/60] 122.225.69.50 () {40 vars in 691 bytes} [Tue Apr 19 17:23:12 2016] GET / => generated 3051 bytes in 7 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 17388|app: 0|req: 19/61] 122.225.69.50 () {40 vars in 650 bytes} [Tue Apr 19 17:23:14 2016] GET /favicon.ico => generated 2471 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (2 switches on core 0)
+[pid: 17380|app: 0|req: 12/62] 122.225.69.50 () {44 vars in 748 bytes} [Tue Apr 19 17:23:31 2016] GET / => generated 3051 bytes in 7 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 26/63] 122.225.69.50 () {44 vars in 747 bytes} [Tue Apr 19 17:23:40 2016] GET / => generated 3051 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 88 bytes (2 switches on core 0)
+[pid: 17379|app: 0|req: 27/64] 141.212.122.161 () {32 vars in 370 bytes} [Tue Apr 19 18:51:19 2016] GET / => generated 3051 bytes in 9 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+Not Found: /testproxy.php
+[pid: 17379|app: 0|req: 28/65] 185.25.151.159 () {38 vars in 620 bytes} [Tue Apr 19 19:50:51 2016] GET /testproxy.php => generated 2481 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 29/66] 121.42.0.34 () {40 vars in 660 bytes} [Wed Apr 20 01:14:11 2016] GET / => generated 3051 bytes in 9 msecs (HTTP/1.0 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 30/67] 107.191.42.169 () {42 vars in 751 bytes} [Wed Apr 20 01:34:12 2016] GET / => generated 3051 bytes in 8 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 31/68] 107.191.42.169 () {40 vars in 695 bytes} [Wed Apr 20 01:37:24 2016] GET / => generated 3051 bytes in 7 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17388|app: 0|req: 20/69] 107.191.42.169 () {40 vars in 695 bytes} [Wed Apr 20 01:37:29 2016] GET / => generated 3051 bytes in 7 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 32/70] 107.191.42.169 () {40 vars in 695 bytes} [Wed Apr 20 01:37:30 2016] GET / => generated 3051 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 88 bytes (2 switches on core 0)
+[pid: 17380|app: 0|req: 13/71] 107.191.42.169 () {40 vars in 695 bytes} [Wed Apr 20 01:37:47 2016] GET / => generated 3051 bytes in 8 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 33/72] 107.191.42.169 () {42 vars in 741 bytes} [Wed Apr 20 01:37:49 2016] GET /1/ => generated 3851 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17388|app: 0|req: 21/73] 107.191.42.169 () {42 vars in 739 bytes} [Wed Apr 20 01:37:52 2016] GET / => generated 3051 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17380|app: 0|req: 14/74] 107.191.42.169 () {42 vars in 739 bytes} [Wed Apr 20 01:37:52 2016] GET / => generated 3051 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 34/75] 107.191.42.169 () {42 vars in 749 bytes} [Wed Apr 20 01:37:55 2016] GET /about/ => generated 2888 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17387|app: 0|req: 3/76] 107.191.42.169 () {42 vars in 743 bytes} [Wed Apr 20 01:38:00 2016] GET / => generated 3051 bytes in 8 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 35/77] 107.191.42.169 () {42 vars in 741 bytes} [Wed Apr 20 01:38:05 2016] GET /1/ => generated 3851 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17388|app: 0|req: 22/78] 107.191.42.169 () {42 vars in 739 bytes} [Wed Apr 20 01:38:12 2016] GET / => generated 3051 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17380|app: 0|req: 15/79] 107.191.42.169 () {42 vars in 741 bytes} [Wed Apr 20 01:38:36 2016] GET /1/ => generated 3851 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 36/80] 107.191.42.169 () {42 vars in 751 bytes} [Wed Apr 20 01:38:39 2016] GET /about/ => generated 2888 bytes in 2 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17386|app: 0|req: 2/81] 107.191.42.169 () {42 vars in 743 bytes} [Wed Apr 20 01:38:51 2016] GET / => generated 3051 bytes in 25 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 37/82] 107.191.42.169 () {42 vars in 749 bytes} [Wed Apr 20 01:38:53 2016] GET /about/ => generated 2888 bytes in 1 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17382|app: 0|req: 2/83] 107.191.42.169 () {42 vars in 743 bytes} [Wed Apr 20 01:38:54 2016] GET / => generated 3051 bytes in 48 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 38/84] 107.191.42.169 () {42 vars in 749 bytes} [Wed Apr 20 01:38:56 2016] GET /about/ => generated 2888 bytes in 2 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17387|app: 0|req: 4/85] 107.191.42.169 () {42 vars in 743 bytes} [Wed Apr 20 01:38:58 2016] GET / => generated 3051 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 39/86] 107.191.42.169 () {42 vars in 749 bytes} [Wed Apr 20 01:56:19 2016] GET / => generated 3051 bytes in 12 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 17388|app: 0|req: 23/87] 107.191.42.169 () {42 vars in 702 bytes} [Wed Apr 20 01:56:20 2016] GET /favicon.ico => generated 2466 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (2 switches on core 0)
+[pid: 17380|app: 0|req: 16/88] 107.191.42.169 () {40 vars in 696 bytes} [Wed Apr 20 01:56:46 2016] GET / => generated 3051 bytes in 7 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 40/89] 107.191.42.169 () {40 vars in 696 bytes} [Wed Apr 20 01:56:47 2016] GET / => generated 3051 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 41/90] 107.191.42.169 () {40 vars in 696 bytes} [Wed Apr 20 02:44:17 2016] GET / => generated 3051 bytes in 10 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17388|app: 0|req: 24/91] 107.191.42.169 () {40 vars in 696 bytes} [Wed Apr 20 02:44:17 2016] GET / => generated 3051 bytes in 13 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 42/92] 107.191.42.169 () {40 vars in 696 bytes} [Wed Apr 20 02:44:53 2016] GET / => generated 3051 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17380|app: 0|req: 17/93] 107.191.42.169 () {40 vars in 696 bytes} [Wed Apr 20 02:44:53 2016] GET / => generated 3051 bytes in 9 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 43/94] 108.61.176.213 () {44 vars in 717 bytes} [Wed Apr 20 04:31:15 2016] GET / => generated 3051 bytes in 9 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+Not Found: /Images/Logo.gif
+[pid: 17388|app: 0|req: 25/95] 108.61.176.213 () {40 vars in 704 bytes} [Wed Apr 20 04:32:04 2016] GET /Images/Logo.gif => generated 2478 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /images/logo.gif
+[pid: 17380|app: 0|req: 18/96] 108.61.176.213 () {40 vars in 704 bytes} [Wed Apr 20 04:32:04 2016] GET /images/logo.gif => generated 2478 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /Images/ftv2pnode.gif
+[pid: 17379|app: 0|req: 44/97] 108.61.176.213 () {40 vars in 714 bytes} [Wed Apr 20 04:32:05 2016] GET /Images/ftv2pnode.gif => generated 2493 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /images/bg_01_01.jpg
+[pid: 17387|app: 0|req: 5/98] 108.61.176.213 () {40 vars in 712 bytes} [Wed Apr 20 04:32:05 2016] GET /images/bg_01_01.jpg => generated 2490 bytes in 6 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /head.gif
+[pid: 17379|app: 0|req: 45/99] 108.61.176.213 () {40 vars in 690 bytes} [Wed Apr 20 04:32:05 2016] GET /head.gif => generated 2457 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /testproxy.php
+[pid: 17379|app: 0|req: 46/100] 185.25.151.159 () {38 vars in 617 bytes} [Wed Apr 20 04:42:40 2016] GET /testproxy.php => generated 2478 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 17388|app: 0|req: 26/101] 123.151.42.61 () {36 vars in 420 bytes} [Wed Apr 20 04:44:41 2016] GET / => generated 3051 bytes in 7 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 47/102] 107.191.42.169 () {40 vars in 696 bytes} [Wed Apr 20 05:20:31 2016] GET / => generated 3051 bytes in 8 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17388|app: 0|req: 27/103] 107.191.42.169 () {40 vars in 696 bytes} [Wed Apr 20 05:20:32 2016] GET / => generated 3051 bytes in 7 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 48/104] 107.191.42.169 () {40 vars in 696 bytes} [Wed Apr 20 05:22:20 2016] GET / => generated 3051 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17388|app: 0|req: 28/105] 107.191.42.169 () {40 vars in 695 bytes} [Wed Apr 20 05:22:26 2016] GET / => generated 3051 bytes in 6 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 49/106] 107.191.42.169 () {40 vars in 695 bytes} [Wed Apr 20 05:22:30 2016] GET / => generated 3051 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17380|app: 0|req: 19/107] 107.191.42.169 () {42 vars in 740 bytes} [Wed Apr 20 05:22:31 2016] GET /1/ => generated 3851 bytes in 8 msecs (HTTP/1.1 200) 2 headers in 88 bytes (2 switches on core 0)
+[pid: 17379|app: 0|req: 50/108] 107.191.42.169 () {42 vars in 738 bytes} [Wed Apr 20 05:22:34 2016] GET / => generated 3051 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17388|app: 0|req: 29/109] 107.191.42.169 () {42 vars in 740 bytes} [Wed Apr 20 05:22:38 2016] GET /1/ => generated 3851 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17380|app: 0|req: 20/110] 107.191.42.169 () {42 vars in 738 bytes} [Wed Apr 20 05:22:41 2016] GET / => generated 3051 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 88 bytes (2 switches on core 0)
+[pid: 17379|app: 0|req: 51/111] 107.191.42.169 () {42 vars in 738 bytes} [Wed Apr 20 05:22:42 2016] GET / => generated 3051 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 88 bytes (2 switches on core 0)
+[pid: 17379|app: 0|req: 52/112] 158.69.228.18 () {32 vars in 436 bytes} [Wed Apr 20 08:46:31 2016] GET / => generated 3051 bytes in 11 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 53/113] 23.239.208.210 () {34 vars in 437 bytes} [Wed Apr 20 11:06:50 2016] GET / => generated 3051 bytes in 9 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17388|app: 0|req: 30/114] 23.239.208.210 () {34 vars in 449 bytes} [Wed Apr 20 11:06:50 2016] GET /about/ => generated 2888 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 54/115] 121.42.0.35 () {38 vars in 603 bytes} [Wed Apr 20 13:32:16 2016] GET / => generated 3051 bytes in 8 msecs (HTTP/1.0 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 55/116] 204.12.196.235 () {32 vars in 492 bytes} [Wed Apr 20 17:13:43 2016] GET / => generated 3051 bytes in 8 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 56/117] 69.197.185.20 () {32 vars in 491 bytes} [Wed Apr 20 18:02:23 2016] GET / => generated 3051 bytes in 9 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 57/118] 123.59.59.52 () {34 vars in 444 bytes} [Wed Apr 20 18:25:38 2016] GET / => generated 3051 bytes in 8 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17388|app: 0|req: 31/119] 123.151.42.61 () {36 vars in 420 bytes} [Wed Apr 20 18:27:33 2016] GET / => generated 3051 bytes in 8 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 58/120] 74.91.23.110 () {32 vars in 498 bytes} [Wed Apr 20 19:15:44 2016] GET / => generated 3051 bytes in 8 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+Not Found: /testproxy.php
+[pid: 17379|app: 0|req: 59/121] 185.25.148.240 () {38 vars in 617 bytes} [Wed Apr 20 19:25:40 2016] GET /testproxy.php => generated 2478 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 60/122] 120.132.95.89 () {34 vars in 445 bytes} [Wed Apr 20 19:41:57 2016] GET / => generated 3051 bytes in 8 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 61/123] 121.42.0.33 () {38 vars in 599 bytes} [Thu Apr 21 01:40:46 2016] GET / => generated 3051 bytes in 9 msecs (HTTP/1.0 200) 2 headers in 88 bytes (1 switches on core 0)
+Not Found: /cgi/common.cgi
+[pid: 17379|app: 0|req: 62/124] 201.173.130.33 () {32 vars in 380 bytes} [Thu Apr 21 01:58:26 2016] GET /cgi/common.cgi => generated 2475 bytes in 5 msecs (HTTP/1.0 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /stssys.htm
+[pid: 17388|app: 0|req: 32/125] 201.173.130.33 () {32 vars in 372 bytes} [Thu Apr 21 01:58:27 2016] GET /stssys.htm => generated 2463 bytes in 5 msecs (HTTP/1.0 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 17380|app: 0|req: 21/126] 201.173.130.33 () {32 vars in 352 bytes} [Thu Apr 21 01:58:27 2016] GET / => generated 3051 bytes in 9 msecs (HTTP/1.0 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 63/127] 158.69.228.18 () {32 vars in 418 bytes} [Thu Apr 21 02:59:45 2016] GET / => generated 3051 bytes in 8 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 64/128] 123.151.42.61 () {36 vars in 420 bytes} [Thu Apr 21 06:27:20 2016] GET / => generated 3051 bytes in 8 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 65/129] 169.54.244.82 () {30 vars in 379 bytes} [Thu Apr 21 06:42:50 2016] GET / => generated 3051 bytes in 8 msecs (HTTP/1.0 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 66/130] 118.193.238.202 () {34 vars in 401 bytes} [Thu Apr 21 07:16:53 2016] GET / => generated 3051 bytes in 12 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17388|app: 0|req: 33/131] 118.193.238.202 () {34 vars in 452 bytes} [Thu Apr 21 07:16:54 2016] GET / => generated 3051 bytes in 8 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 67/132] 118.193.238.202 () {34 vars in 401 bytes} [Thu Apr 21 07:17:19 2016] GET / => generated 3051 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17380|app: 0|req: 22/133] 118.193.238.202 () {34 vars in 452 bytes} [Thu Apr 21 07:17:20 2016] GET / => generated 3051 bytes in 7 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+Not Found: /manager/html
+[pid: 17379|app: 0|req: 68/134] 202.109.143.18 () {36 vars in 484 bytes} [Thu Apr 21 07:19:27 2016] GET /manager/html => generated 2469 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /webdav/
+[pid: 17379|app: 0|req: 69/135] 192.99.144.140 () {34 vars in 399 bytes} [Thu Apr 21 08:39:16 2016] PROPFIND /webdav/ => generated 2459 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 70/136] 120.132.95.90 () {34 vars in 446 bytes} [Thu Apr 21 09:05:47 2016] GET / => generated 3051 bytes in 7 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+Not Found: /testproxy.php
+[pid: 17379|app: 0|req: 71/137] 185.25.148.240 () {38 vars in 617 bytes} [Thu Apr 21 12:24:23 2016] GET /testproxy.php => generated 2478 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 72/138] 108.61.176.213 () {42 vars in 635 bytes} [Thu Apr 21 13:38:59 2016] GET / => generated 3051 bytes in 11 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+Not Found: /Images/Logo.gif
+[pid: 17388|app: 0|req: 34/139] 108.61.176.213 () {40 vars in 651 bytes} [Thu Apr 21 13:39:27 2016] GET /Images/Logo.gif => generated 2478 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /images/logo.gif
+[pid: 17380|app: 0|req: 23/140] 108.61.176.213 () {40 vars in 651 bytes} [Thu Apr 21 13:39:27 2016] GET /images/logo.gif => generated 2478 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /Images/ftv2pnode.gif
+[pid: 17379|app: 0|req: 73/141] 108.61.176.213 () {40 vars in 661 bytes} [Thu Apr 21 13:39:27 2016] GET /Images/ftv2pnode.gif => generated 2493 bytes in 6 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /images/bg_01_01.jpg
+[pid: 17382|app: 0|req: 3/142] 108.61.176.213 () {40 vars in 659 bytes} [Thu Apr 21 13:39:27 2016] GET /images/bg_01_01.jpg => generated 2490 bytes in 9 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /head.gif
+[pid: 17379|app: 0|req: 74/143] 108.61.176.213 () {40 vars in 637 bytes} [Thu Apr 21 13:39:27 2016] GET /head.gif => generated 2457 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /struts/utils.js
+[pid: 17379|app: 0|req: 75/144] 180.97.106.162 () {28 vars in 334 bytes} [Thu Apr 21 13:48:53 2016] GET /struts/utils.js => generated 2478 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 76/145] 208.43.251.178 () {32 vars in 414 bytes} [Thu Apr 21 14:08:56 2016] GET / => generated 3051 bytes in 8 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 77/146] 123.151.42.61 () {36 vars in 420 bytes} [Thu Apr 21 17:39:36 2016] GET / => generated 3051 bytes in 9 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+Not Found: /robots.txt
+[pid: 17379|app: 0|req: 78/147] 180.97.106.162 () {30 vars in 358 bytes} [Thu Apr 21 18:07:50 2016] GET /robots.txt => generated 2463 bytes in 6 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 79/148] 123.57.254.142 () {26 vars in 278 bytes} [Thu Apr 21 18:48:55 2016] GET / => generated 3051 bytes in 9 msecs (HTTP/1.0 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17388|app: 0|req: 35/149] 123.57.254.142 () {26 vars in 282 bytes} [Thu Apr 21 18:48:55 2016] OPTIONS / => generated 0 bytes in 2 msecs (HTTP/1.0 200) 4 headers in 134 bytes (1 switches on core 0)
+Not Found: /nice ports,/Trinity.txt.bak
+[pid: 17380|app: 0|req: 24/150] 123.57.254.142 () {26 vars in 340 bytes} [Thu Apr 21 18:48:56 2016] GET /nice%20ports%2C/Tri%6Eity.txt%2ebak => generated 2512 bytes in 5 msecs (HTTP/1.0 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 17387|app: 0|req: 6/151] 123.57.254.142 () {32 vars in 439 bytes} [Thu Apr 21 18:49:13 2016] OPTIONS / => generated 0 bytes in 3 msecs (HTTP/1.1 200) 4 headers in 134 bytes (1 switches on core 0)
+[pid: 17388|app: 0|req: 36/152] 123.57.254.142 () {32 vars in 435 bytes} [Thu Apr 21 18:49:13 2016] GET / => generated 3051 bytes in 14 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+Not Found: /robots.txt
+[pid: 17379|app: 0|req: 80/153] 123.57.254.142 () {32 vars in 455 bytes} [Thu Apr 21 18:49:13 2016] GET /robots.txt => generated 2473 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 17380|app: 0|req: 25/154] 123.57.254.142 () {32 vars in 457 bytes} [Thu Apr 21 18:49:13 2016] GET /favicon.ico => generated 2476 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /cgi/common.cgi
+[pid: 17379|app: 0|req: 81/155] 187.160.174.191 () {32 vars in 381 bytes} [Thu Apr 21 19:11:51 2016] GET /cgi/common.cgi => generated 2475 bytes in 6 msecs (HTTP/1.0 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /stssys.htm
+[pid: 17388|app: 0|req: 37/156] 187.160.174.191 () {32 vars in 373 bytes} [Thu Apr 21 19:11:51 2016] GET /stssys.htm => generated 2463 bytes in 5 msecs (HTTP/1.0 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 17380|app: 0|req: 26/157] 187.160.174.191 () {32 vars in 353 bytes} [Thu Apr 21 19:11:52 2016] GET / => generated 3051 bytes in 7 msecs (HTTP/1.0 200) 2 headers in 88 bytes (1 switches on core 0)
+Not Found: /testproxy.php
+[pid: 17379|app: 0|req: 82/158] 185.49.14.190 () {38 vars in 616 bytes} [Thu Apr 21 19:15:11 2016] GET /testproxy.php => generated 2478 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /testproxy.php
+[pid: 17388|app: 0|req: 38/159] 185.49.14.190 () {38 vars in 616 bytes} [Thu Apr 21 19:15:13 2016] GET /testproxy.php => generated 2478 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 83/160] 222.85.138.75 () {34 vars in 536 bytes} [Thu Apr 21 19:49:59 2016] HEAD / => generated 0 bytes in 8 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 84/161] 198.101.238.203 () {36 vars in 577 bytes} [Thu Apr 21 19:57:39 2016] GET / => generated 3051 bytes in 8 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+Not Found: /testproxy.php
+[pid: 17379|app: 0|req: 85/162] 185.49.14.190 () {38 vars in 619 bytes} [Thu Apr 21 21:10:22 2016] GET /testproxy.php => generated 2481 bytes in 6 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 86/163] 52.33.132.148 () {26 vars in 277 bytes} [Fri Apr 22 00:52:17 2016] GET / => generated 3051 bytes in 9 msecs (HTTP/1.0 200) 2 headers in 88 bytes (1 switches on core 0)
+Not Found: /cache/global/img/gs.gif
+[pid: 17379|app: 0|req: 87/164] 80.82.78.38 () {32 vars in 428 bytes} [Fri Apr 22 01:15:49 2016] GET /cache/global/img/gs.gif => generated 2502 bytes in 6 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 88/165] 223.104.5.207 () {40 vars in 710 bytes} [Fri Apr 22 01:30:14 2016] GET / => generated 3051 bytes in 8 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 17388|app: 0|req: 39/166] 223.104.5.207 () {40 vars in 667 bytes} [Fri Apr 22 01:30:15 2016] GET /favicon.ico => generated 2470 bytes in 6 msecs (HTTP/1.1 404) 2 headers in 80 bytes (2 switches on core 0)
+[pid: 17379|app: 0|req: 89/167] 223.104.5.207 () {42 vars in 751 bytes} [Fri Apr 22 01:30:20 2016] GET / => generated 3051 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17380|app: 0|req: 27/168] 223.104.5.207 () {42 vars in 763 bytes} [Fri Apr 22 01:30:22 2016] GET /about/ => generated 2888 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17388|app: 0|req: 40/169] 223.104.5.207 () {42 vars in 755 bytes} [Fri Apr 22 01:30:27 2016] GET /1/ => generated 3851 bytes in 10 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 90/170] 107.191.42.169 () {40 vars in 696 bytes} [Fri Apr 22 02:36:45 2016] GET / => generated 3051 bytes in 9 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17388|app: 0|req: 41/171] 107.191.42.169 () {40 vars in 696 bytes} [Fri Apr 22 02:36:47 2016] GET / => generated 3051 bytes in 8 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 91/172] 107.191.42.169 () {40 vars in 696 bytes} [Fri Apr 22 02:36:51 2016] GET / => generated 3051 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 88 bytes (2 switches on core 0)
+[pid: 17380|app: 0|req: 28/173] 107.191.42.169 () {40 vars in 696 bytes} [Fri Apr 22 02:36:55 2016] GET / => generated 3051 bytes in 8 msecs (HTTP/1.1 200) 2 headers in 88 bytes (2 switches on core 0)
+[pid: 17379|app: 0|req: 92/174] 107.191.42.169 () {40 vars in 696 bytes} [Fri Apr 22 02:36:59 2016] GET / => generated 3051 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 88 bytes (2 switches on core 0)
+[pid: 17388|app: 0|req: 42/175] 107.191.42.169 () {40 vars in 696 bytes} [Fri Apr 22 02:37:02 2016] GET / => generated 3051 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17380|app: 0|req: 29/176] 107.191.42.169 () {40 vars in 696 bytes} [Fri Apr 22 02:37:12 2016] GET / => generated 3051 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 88 bytes (2 switches on core 0)
+[pid: 17379|app: 0|req: 93/177] 107.191.42.169 () {40 vars in 696 bytes} [Fri Apr 22 02:37:15 2016] GET / => generated 3051 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17388|app: 0|req: 43/178] 107.191.42.169 () {40 vars in 696 bytes} [Fri Apr 22 02:37:16 2016] GET / => generated 3051 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 88 bytes (2 switches on core 0)
+[pid: 17387|app: 0|req: 7/179] 107.191.42.169 () {40 vars in 696 bytes} [Fri Apr 22 02:37:19 2016] GET / => generated 3051 bytes in 10 msecs (HTTP/1.1 200) 2 headers in 88 bytes (2 switches on core 0)
+[pid: 17379|app: 0|req: 94/180] 107.191.42.169 () {40 vars in 696 bytes} [Fri Apr 22 02:37:23 2016] GET / => generated 3051 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17388|app: 0|req: 44/181] 107.191.42.169 () {40 vars in 696 bytes} [Fri Apr 22 02:37:29 2016] GET / => generated 3051 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 88 bytes (2 switches on core 0)
+[pid: 17380|app: 0|req: 30/182] 107.191.42.169 () {40 vars in 696 bytes} [Fri Apr 22 02:37:36 2016] GET / => generated 3051 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 95/183] 107.191.42.169 () {40 vars in 696 bytes} [Fri Apr 22 02:37:46 2016] GET / => generated 3051 bytes in 6 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17388|app: 0|req: 45/184] 107.191.42.169 () {40 vars in 696 bytes} [Fri Apr 22 02:37:57 2016] GET / => generated 3051 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17380|app: 0|req: 31/185] 107.191.42.169 () {40 vars in 696 bytes} [Fri Apr 22 02:37:59 2016] GET / => generated 3051 bytes in 6 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 96/186] 107.191.42.169 () {40 vars in 696 bytes} [Fri Apr 22 02:38:04 2016] GET / => generated 3051 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 88 bytes (2 switches on core 0)
+[pid: 17388|app: 0|req: 46/187] 107.191.42.169 () {40 vars in 696 bytes} [Fri Apr 22 02:38:06 2016] GET / => generated 3051 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17380|app: 0|req: 32/188] 107.191.42.169 () {40 vars in 696 bytes} [Fri Apr 22 02:38:09 2016] GET / => generated 3051 bytes in 6 msecs (HTTP/1.1 200) 2 headers in 88 bytes (2 switches on core 0)
+Not Found: /testproxy.php
+[pid: 17379|app: 0|req: 97/189] 185.25.151.159 () {38 vars in 620 bytes} [Fri Apr 22 04:01:06 2016] GET /testproxy.php => generated 2481 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /wp-login.php
+[pid: 17379|app: 0|req: 98/190] 91.210.145.91 () {40 vars in 820 bytes} [Fri Apr 22 04:33:59 2016] GET /wp-login.php => generated 2474 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /wp-login.php
+[pid: 17388|app: 0|req: 47/191] 91.210.145.91 () {40 vars in 820 bytes} [Fri Apr 22 04:34:00 2016] GET /wp-login.php => generated 2474 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /administrator/
+[pid: 17380|app: 0|req: 33/192] 91.210.145.91 () {40 vars in 826 bytes} [Fri Apr 22 04:34:01 2016] GET /administrator/ => generated 2480 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 99/193] 123.151.42.61 () {36 vars in 420 bytes} [Fri Apr 22 05:40:20 2016] GET / => generated 3051 bytes in 8 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17382|app: 0|req: 4/194] 108.61.176.213 () {42 vars in 635 bytes} [Fri Apr 22 07:28:17 2016] GET / => generated 3051 bytes in 19 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+Not Found: /Images/Logo.gif
+[pid: 17379|app: 0|req: 100/195] 108.61.176.213 () {40 vars in 651 bytes} [Fri Apr 22 07:28:20 2016] GET /Images/Logo.gif => generated 2478 bytes in 6 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /images/logo.gif
+[pid: 17388|app: 0|req: 48/196] 108.61.176.213 () {40 vars in 651 bytes} [Fri Apr 22 07:28:20 2016] GET /images/logo.gif => generated 2478 bytes in 7 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /images/bg_01_01.jpg
+[pid: 17379|app: 0|req: 101/197] 108.61.176.213 () {40 vars in 659 bytes} [Fri Apr 22 07:28:20 2016] GET /images/bg_01_01.jpg => generated 2490 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /head.gif
+[pid: 17379|app: 0|req: 102/198] 108.61.176.213 () {40 vars in 637 bytes} [Fri Apr 22 07:28:20 2016] GET /head.gif => generated 2457 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /Images/ftv2pnode.gif
+[pid: 17381|app: 0|req: 1/199] 108.61.176.213 () {40 vars in 661 bytes} [Fri Apr 22 07:28:20 2016] GET /Images/ftv2pnode.gif => generated 2493 bytes in 83 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /robots.txt
+[pid: 17379|app: 0|req: 103/200] 66.249.64.245 () {36 vars in 521 bytes} [Fri Apr 22 08:24:52 2016] GET /robots.txt => generated 2467 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 17388|app: 0|req: 49/201] 66.249.64.240 () {38 vars in 583 bytes} [Fri Apr 22 08:24:53 2016] GET / => generated 3051 bytes in 8 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 104/202] 66.249.64.245 () {38 vars in 595 bytes} [Fri Apr 22 08:27:30 2016] GET /about/ => generated 2888 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 105/203] 66.249.64.245 () {38 vars in 587 bytes} [Fri Apr 22 08:30:47 2016] GET /1/ => generated 3851 bytes in 9 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 106/204] 108.61.176.213 () {42 vars in 635 bytes} [Fri Apr 22 09:02:51 2016] GET / => generated 3051 bytes in 10 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+Not Found: /Images/Logo.gif
+[pid: 17388|app: 0|req: 50/205] 108.61.176.213 () {40 vars in 651 bytes} [Fri Apr 22 09:03:05 2016] GET /Images/Logo.gif => generated 2478 bytes in 8 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /images/logo.gif
+[pid: 17379|app: 0|req: 107/206] 108.61.176.213 () {40 vars in 651 bytes} [Fri Apr 22 09:03:05 2016] GET /images/logo.gif => generated 2478 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /Images/ftv2pnode.gif
+[pid: 17380|app: 0|req: 34/207] 108.61.176.213 () {40 vars in 661 bytes} [Fri Apr 22 09:03:06 2016] GET /Images/ftv2pnode.gif => generated 2493 bytes in 6 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /images/bg_01_01.jpg
+[pid: 17379|app: 0|req: 108/208] 108.61.176.213 () {40 vars in 659 bytes} [Fri Apr 22 09:03:06 2016] GET /images/bg_01_01.jpg => generated 2490 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /head.gif
+[pid: 17388|app: 0|req: 51/209] 108.61.176.213 () {40 vars in 637 bytes} [Fri Apr 22 09:03:06 2016] GET /head.gif => generated 2457 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 109/210] 66.249.79.22 () {38 vars in 582 bytes} [Fri Apr 22 11:38:30 2016] GET / => generated 3051 bytes in 8 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 110/211] 66.249.79.22 () {38 vars in 594 bytes} [Fri Apr 22 11:41:15 2016] GET /about/ => generated 2888 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 111/212] 66.249.79.22 () {38 vars in 586 bytes} [Fri Apr 22 11:45:45 2016] GET /1/ => generated 3851 bytes in 6 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+Not Found: /testproxy.php
+[pid: 17379|app: 0|req: 112/213] 185.49.14.190 () {38 vars in 616 bytes} [Fri Apr 22 14:10:35 2016] GET /testproxy.php => generated 2478 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 113/214] 74.91.20.195 () {32 vars in 487 bytes} [Fri Apr 22 17:09:16 2016] GET / => generated 3051 bytes in 8 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 114/215] 120.132.95.90 () {34 vars in 446 bytes} [Fri Apr 22 18:07:45 2016] GET / => generated 3051 bytes in 11 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 115/216] 123.151.42.61 () {36 vars in 420 bytes} [Fri Apr 22 18:19:46 2016] GET / => generated 3051 bytes in 10 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+Not Found: /testproxy.php
+[pid: 17379|app: 0|req: 116/217] 91.196.50.33 () {38 vars in 615 bytes} [Fri Apr 22 21:01:24 2016] GET /testproxy.php => generated 2478 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 117/218] 140.224.95.202 () {36 vars in 546 bytes} [Fri Apr 22 21:13:51 2016] GET / => generated 3051 bytes in 7 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 118/219] 141.212.122.161 () {32 vars in 370 bytes} [Sat Apr 23 00:16:23 2016] GET / => generated 3051 bytes in 8 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+Not Found: /robots.txt
+[pid: 17379|app: 0|req: 119/220] 66.249.79.16 () {36 vars in 520 bytes} [Sat Apr 23 04:32:08 2016] GET /robots.txt => generated 2467 bytes in 6 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /testproxy.php
+[pid: 17379|app: 0|req: 120/221] 91.196.50.33 () {38 vars in 615 bytes} [Sat Apr 23 04:59:01 2016] GET /testproxy.php => generated 2478 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 121/222] 123.151.42.61 () {36 vars in 420 bytes} [Sat Apr 23 06:19:30 2016] GET / => generated 3051 bytes in 10 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+Not Found: /CFIDE/administrator/
+[pid: 17379|app: 0|req: 122/223] 52.39.14.106 () {30 vars in 371 bytes} [Sat Apr 23 06:44:57 2016] GET /CFIDE/administrator/ => generated 2493 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /robots.txt
+[pid: 17381|app: 0|req: 2/224] 208.43.225.85 () {34 vars in 474 bytes} [Sat Apr 23 08:46:25 2016] GET /robots.txt => generated 2467 bytes in 23 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 123/225] 208.43.225.85 () {34 vars in 454 bytes} [Sat Apr 23 08:46:32 2016] GET / => generated 3051 bytes in 20 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+Not Found: /webdav/
+[pid: 17379|app: 0|req: 124/226] 192.99.144.140 () {34 vars in 399 bytes} [Sat Apr 23 09:17:09 2016] PROPFIND /webdav/ => generated 2459 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /manager/html
+[pid: 17379|app: 0|req: 125/227] 202.109.143.18 () {36 vars in 484 bytes} [Sat Apr 23 09:25:17 2016] GET /manager/html => generated 2469 bytes in 8 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 126/228] 120.132.95.89 () {34 vars in 446 bytes} [Sat Apr 23 11:34:27 2016] GET / => generated 3051 bytes in 13 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+Not Found: /testproxy.php
+[pid: 17379|app: 0|req: 127/229] 185.25.148.240 () {38 vars in 617 bytes} [Sat Apr 23 12:06:10 2016] GET /testproxy.php => generated 2478 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /testproxy.php
+[pid: 17379|app: 0|req: 128/230] 37.233.101.128 () {38 vars in 620 bytes} [Sat Apr 23 12:16:01 2016] GET /testproxy.php => generated 2481 bytes in 6 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /zecmd/zecmd.jsp
+[pid: 17379|app: 0|req: 129/231] 82.220.38.188 () {26 vars in 328 bytes} [Sat Apr 23 14:54:02 2016] GET /zecmd/zecmd.jsp?comment=id => generated 2485 bytes in 6 msecs (HTTP/1.0 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 130/232] 107.150.32.60 () {32 vars in 488 bytes} [Sat Apr 23 15:31:13 2016] GET / => generated 3051 bytes in 15 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+Not Found: /testproxy.php
+[pid: 17379|app: 0|req: 131/233] 185.49.14.190 () {38 vars in 616 bytes} [Sat Apr 23 20:34:39 2016] GET /testproxy.php => generated 2478 bytes in 6 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 132/234] 123.151.42.61 () {36 vars in 420 bytes} [Sat Apr 23 21:10:03 2016] GET / => generated 3051 bytes in 11 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 133/235] 74.91.17.179 () {32 vars in 490 bytes} [Sat Apr 23 23:22:17 2016] GET / => generated 3051 bytes in 9 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 134/236] 69.30.202.228 () {32 vars in 492 bytes} [Sun Apr 24 00:09:39 2016] GET / => generated 3051 bytes in 10 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+Not Found: /robots.txt
+[pid: 17388|app: 0|req: 52/237] 66.249.69.115 () {36 vars in 521 bytes} [Sun Apr 24 00:13:43 2016] GET /robots.txt => generated 2467 bytes in 6 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 135/238] 66.249.69.115 () {38 vars in 713 bytes} [Sun Apr 24 00:13:43 2016] GET /1/ => generated 3851 bytes in 8 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+Not Found: /testproxy.php
+[pid: 17379|app: 0|req: 136/239] 185.25.151.159 () {38 vars in 617 bytes} [Sun Apr 24 00:52:41 2016] GET /testproxy.php => generated 2478 bytes in 6 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 137/240] 121.42.0.35 () {38 vars in 599 bytes} [Sun Apr 24 03:29:44 2016] GET / => generated 3051 bytes in 9 msecs (HTTP/1.0 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 138/241] 121.42.0.35 () {38 vars in 603 bytes} [Sun Apr 24 03:42:23 2016] GET / => generated 3051 bytes in 9 msecs (HTTP/1.0 200) 2 headers in 88 bytes (1 switches on core 0)
+Not Found: /testproxy.php
+[pid: 17379|app: 0|req: 139/242] 185.25.151.159 () {38 vars in 617 bytes} [Sun Apr 24 04:28:35 2016] GET /testproxy.php => generated 2478 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 17384|app: 0|req: 1/243] 123.151.42.61 () {36 vars in 420 bytes} [Sun Apr 24 09:09:56 2016] GET / => generated 3051 bytes in 110 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 140/244] 222.85.138.75 () {36 vars in 592 bytes} [Sun Apr 24 10:50:14 2016] HEAD / => generated 0 bytes in 9 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+Not Found: /mobile/
+[pid: 17379|app: 0|req: 141/245] 66.249.69.99 () {38 vars in 596 bytes} [Sun Apr 24 11:49:50 2016] GET /mobile/ => generated 2458 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /m/
+[pid: 17388|app: 0|req: 53/246] 66.249.69.99 () {38 vars in 586 bytes} [Sun Apr 24 11:49:53 2016] GET /m/ => generated 2443 bytes in 7 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 142/247] 66.249.65.235 () {38 vars in 583 bytes} [Sun Apr 24 12:24:09 2016] GET / => generated 3051 bytes in 10 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+Not Found: /robots.txt
+[pid: 17388|app: 0|req: 54/248] 66.249.65.228 () {36 vars in 521 bytes} [Sun Apr 24 12:24:09 2016] GET /robots.txt => generated 2467 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 143/249] 107.191.42.169 () {42 vars in 793 bytes} [Sun Apr 24 12:43:12 2016] GET / => generated 3051 bytes in 11 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 17388|app: 0|req: 55/250] 107.191.42.169 () {42 vars in 750 bytes} [Sun Apr 24 12:43:13 2016] GET /favicon.ico => generated 2470 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 17380|app: 0|req: 35/251] 107.191.42.169 () {42 vars in 805 bytes} [Sun Apr 24 12:43:25 2016] GET /admin/ => generated 6682 bytes in 30 msecs (HTTP/1.1 200) 6 headers in 251 bytes (1 switches on core 0)
+/webapp/markblog0.9/env/lib/python2.7/site-packages/pagedown/widgets.py:55: RemovedInDjango110Warning: render() must be called with a dict, not a Context.
+  return template.render(context)
+
+[pid: 17379|app: 0|req: 144/252] 107.191.42.169 () {44 vars in 884 bytes} [Sun Apr 24 12:43:29 2016] GET /admin/posts/posts/add/ => generated 7892 bytes in 51 msecs (HTTP/1.1 200) 7 headers in 373 bytes (1 switches on core 0)
+[pid: 17388|app: 0|req: 56/253] 107.191.42.169 () {42 vars in 776 bytes} [Sun Apr 24 12:43:29 2016] GET /admin/jsi18n/ => generated 3217 bytes in 8 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 145/254] 107.191.42.169 () {44 vars in 884 bytes} [Sun Apr 24 12:43:57 2016] GET /admin/posts/posts/add/ => generated 7892 bytes in 35 msecs (HTTP/1.1 200) 7 headers in 373 bytes (1 switches on core 0)
+[pid: 17388|app: 0|req: 57/255] 107.191.42.169 () {44 vars in 941 bytes} [Sun Apr 24 12:44:01 2016] GET /admin/posts/tags/add/?_to_field=id&_popup=1 => generated 3133 bytes in 87 msecs (HTTP/1.1 200) 7 headers in 373 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 146/256] 107.191.42.169 () {50 vars in 1182 bytes} [Sun Apr 24 12:44:20 2016] POST /admin/posts/tags/add/?_to_field=id&_popup=1 => generated 226 bytes in 17 msecs (HTTP/1.1 200) 6 headers in 251 bytes (1 switches on core 0)
+Not Found: /xmlrpc.php
+[pid: 17388|app: 0|req: 58/257] 188.138.56.180 () {32 vars in 445 bytes} [Sun Apr 24 12:45:36 2016] POST /xmlrpc.php => generated 2464 bytes in 5 msecs (HTTP/1.0 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 147/258] 107.191.42.169 () {50 vars in 1122 bytes} [Sun Apr 24 12:59:03 2016] POST /admin/posts/posts/add/ => generated 12776 bytes in 88 msecs (HTTP/1.1 200) 7 headers in 373 bytes (1 switches on core 0)
+[pid: 17388|app: 0|req: 59/259] 107.191.42.169 () {42 vars in 776 bytes} [Sun Apr 24 12:59:03 2016] GET /admin/jsi18n/ => generated 3217 bytes in 11 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 148/260] 107.191.42.169 () {42 vars in 793 bytes} [Sun Apr 24 12:59:05 2016] GET / => generated 3051 bytes in 8 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17388|app: 0|req: 60/261] 107.191.42.169 () {50 vars in 1122 bytes} [Sun Apr 24 12:59:24 2016] POST /admin/posts/posts/add/ => generated 0 bytes in 24 msecs (HTTP/1.1 302) 8 headers in 484 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 149/262] 107.191.42.169 () {44 vars in 1060 bytes} [Sun Apr 24 12:59:24 2016] GET /admin/posts/posts/ => generated 4757 bytes in 32 msecs (HTTP/1.1 200) 8 headers in 455 bytes (1 switches on core 0)
+[pid: 17388|app: 0|req: 61/263] 107.191.42.169 () {42 vars in 793 bytes} [Sun Apr 24 12:59:28 2016] GET / => generated 3895 bytes in 7 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 150/264] 107.191.42.169 () {42 vars in 772 bytes} [Sun Apr 24 12:59:32 2016] GET /admin/jsi18n/ => generated 3217 bytes in 6 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
+[pid: 17388|app: 0|req: 62/265] 107.191.42.169 () {44 vars in 841 bytes} [Sun Apr 24 12:59:55 2016] GET /3/ => generated 7981 bytes in 9 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 151/266] 173.193.17.200 () {34 vars in 397 bytes} [Sun Apr 24 13:00:09 2016] GET /3/ => generated 7981 bytes in 9 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17388|app: 0|req: 63/267] 107.191.42.169 () {44 vars in 836 bytes} [Sun Apr 24 13:00:14 2016] GET / => generated 3895 bytes in 7 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 152/268] 107.191.42.169 () {44 vars in 838 bytes} [Sun Apr 24 13:00:19 2016] GET /3/ => generated 7981 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17380|app: 0|req: 36/269] 107.191.42.169 () {44 vars in 836 bytes} [Sun Apr 24 13:01:00 2016] GET / => generated 3895 bytes in 10 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 153/270] 107.191.42.169 () {44 vars in 838 bytes} [Sun Apr 24 13:01:14 2016] GET /1/ => generated 3851 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17388|app: 0|req: 64/271] 107.191.42.169 () {44 vars in 836 bytes} [Sun Apr 24 13:01:17 2016] GET / => generated 3895 bytes in 7 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 154/272] 107.191.42.169 () {44 vars in 846 bytes} [Sun Apr 24 13:02:40 2016] GET /about/ => generated 2888 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17386|app: 0|req: 3/273] 107.191.42.169 () {44 vars in 840 bytes} [Sun Apr 24 13:02:58 2016] GET / => generated 3895 bytes in 19 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 155/274] 66.249.65.235 () {40 vars in 650 bytes} [Sun Apr 24 13:03:50 2016] GET /about/ => generated 2888 bytes in 2 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 156/275] 107.191.42.169 () {44 vars in 906 bytes} [Sun Apr 24 13:08:10 2016] GET /admin/posts/posts/3/change/ => generated 12856 bytes in 39 msecs (HTTP/1.1 200) 7 headers in 373 bytes (1 switches on core 0)
+[pid: 17388|app: 0|req: 65/276] 107.191.42.169 () {42 vars in 781 bytes} [Sun Apr 24 13:08:10 2016] GET /admin/jsi18n/ => generated 3217 bytes in 9 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
+Not Found: /testproxy.php
+[pid: 17379|app: 0|req: 157/277] 91.196.50.33 () {38 vars in 615 bytes} [Sun Apr 24 13:09:04 2016] GET /testproxy.php => generated 2478 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 17388|app: 0|req: 66/278] 107.191.42.169 () {50 vars in 1137 bytes} [Sun Apr 24 13:13:14 2016] POST /admin/posts/posts/3/change/ => generated 0 bytes in 20 msecs (HTTP/1.1 302) 8 headers in 486 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 158/279] 107.191.42.169 () {44 vars in 1067 bytes} [Sun Apr 24 13:13:14 2016] GET /admin/posts/posts/ => generated 4759 bytes in 27 msecs (HTTP/1.1 200) 8 headers in 455 bytes (1 switches on core 0)
+[pid: 17388|app: 0|req: 67/280] 107.191.42.169 () {42 vars in 772 bytes} [Sun Apr 24 13:13:15 2016] GET /admin/jsi18n/ => generated 3217 bytes in 5 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
+[pid: 17380|app: 0|req: 37/281] 107.191.42.169 () {44 vars in 896 bytes} [Sun Apr 24 13:13:17 2016] GET /admin/posts/posts/add/ => generated 7923 bytes in 35 msecs (HTTP/1.1 200) 7 headers in 373 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 159/282] 107.191.42.169 () {44 vars in 840 bytes} [Sun Apr 24 13:13:20 2016] GET / => generated 3895 bytes in 11 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17388|app: 0|req: 68/283] 107.191.42.169 () {42 vars in 776 bytes} [Sun Apr 24 13:13:23 2016] GET /admin/jsi18n/ => generated 3217 bytes in 5 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
+[pid: 17380|app: 0|req: 38/284] 107.191.42.169 () {44 vars in 838 bytes} [Sun Apr 24 13:13:24 2016] GET /3/ => generated 12017 bytes in 12 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 160/285] 107.191.42.169 () {44 vars in 836 bytes} [Sun Apr 24 13:13:32 2016] GET / => generated 3895 bytes in 10 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17388|app: 0|req: 69/286] 107.191.42.169 () {44 vars in 846 bytes} [Sun Apr 24 13:13:38 2016] GET /about/ => generated 2888 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17380|app: 0|req: 39/287] 107.191.42.169 () {50 vars in 1122 bytes} [Sun Apr 24 13:16:51 2016] POST /admin/posts/posts/add/ => generated 12106 bytes in 43 msecs (HTTP/1.1 200) 7 headers in 373 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 161/288] 107.191.42.169 () {42 vars in 776 bytes} [Sun Apr 24 13:16:51 2016] GET /admin/jsi18n/ => generated 3217 bytes in 9 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
+[pid: 17388|app: 0|req: 70/289] 107.191.42.169 () {50 vars in 1122 bytes} [Sun Apr 24 13:17:12 2016] POST /admin/posts/posts/add/ => generated 0 bytes in 26 msecs (HTTP/1.1 302) 8 headers in 481 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 162/290] 107.191.42.169 () {44 vars in 1057 bytes} [Sun Apr 24 13:17:13 2016] GET /admin/posts/posts/ => generated 4970 bytes in 28 msecs (HTTP/1.1 200) 8 headers in 455 bytes (1 switches on core 0)
+[pid: 17388|app: 0|req: 71/291] 107.191.42.169 () {42 vars in 772 bytes} [Sun Apr 24 13:17:13 2016] GET /admin/jsi18n/ => generated 3217 bytes in 5 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
+[pid: 17380|app: 0|req: 40/292] 107.191.42.169 () {44 vars in 840 bytes} [Sun Apr 24 13:17:16 2016] GET / => generated 4742 bytes in 12 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 163/293] 107.191.42.169 () {44 vars in 837 bytes} [Sun Apr 24 13:17:30 2016] GET / => generated 4742 bytes in 12 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17388|app: 0|req: 72/294] 107.191.42.169 () {44 vars in 841 bytes} [Sun Apr 24 13:17:34 2016] GET /1/ => generated 3851 bytes in 7 msecs (HTTP/1.1 200) 2 headers in 88 bytes (2 switches on core 0)
+Internal Server Error: /2/
+Traceback (most recent call last):
+  File "/webapp/markblog0.9/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/webapp/markblog0.9/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/webapp/markblog0.9/env/lib/python2.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/webapp/markblog0.9/env/lib/python2.7/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/webapp/markblog0.9/env/lib/python2.7/site-packages/django/views/generic/detail.py", line 117, in get
+    self.object = self.get_object()
+  File "/webapp/markblog0.9/env/lib/python2.7/site-packages/django/views/generic/detail.py", line 56, in get_object
+    {'verbose_name': queryset.model._meta.verbose_name})
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xe6 in position 0: ordinal not in range(128)
+[pid: 17379|app: 0|req: 164/295] 107.191.42.169 () {42 vars in 800 bytes} [Sun Apr 24 13:17:40 2016] GET /2/ => generated 71123 bytes in 47 msecs (HTTP/1.1 500) 2 headers in 92 bytes (1 switches on core 0)
+[pid: 17388|app: 0|req: 73/296] 107.191.42.169 () {44 vars in 841 bytes} [Sun Apr 24 13:17:46 2016] GET /1/ => generated 3851 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17380|app: 0|req: 41/297] 107.191.42.169 () {44 vars in 836 bytes} [Sun Apr 24 13:17:51 2016] GET / => generated 4742 bytes in 10 msecs (HTTP/1.1 200) 2 headers in 88 bytes (2 switches on core 0)
+[pid: 17379|app: 0|req: 165/298] 107.191.42.169 () {44 vars in 838 bytes} [Sun Apr 24 13:17:54 2016] GET /4/ => generated 7545 bytes in 7 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17388|app: 0|req: 74/299] 107.191.42.169 () {44 vars in 836 bytes} [Sun Apr 24 13:18:26 2016] GET / => generated 4742 bytes in 13 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 166/300] 75.126.120.78 () {34 vars in 396 bytes} [Sun Apr 24 13:18:27 2016] GET /4/ => generated 7545 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17380|app: 0|req: 42/301] 107.191.42.169 () {44 vars in 841 bytes} [Sun Apr 24 13:18:32 2016] GET /3/ => generated 12017 bytes in 7 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 167/302] 107.191.42.169 () {44 vars in 839 bytes} [Sun Apr 24 13:18:37 2016] GET / => generated 4742 bytes in 11 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17388|app: 0|req: 75/303] 107.191.42.169 () {44 vars in 841 bytes} [Sun Apr 24 13:18:40 2016] GET /4/ => generated 7545 bytes in 6 msecs (HTTP/1.1 200) 2 headers in 88 bytes (2 switches on core 0)
+[pid: 17379|app: 0|req: 168/304] 107.191.42.169 () {44 vars in 841 bytes} [Sun Apr 24 13:19:09 2016] GET /4/ => generated 7545 bytes in 6 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17388|app: 0|req: 76/305] 107.191.42.169 () {44 vars in 841 bytes} [Sun Apr 24 13:19:23 2016] GET /4/ => generated 7545 bytes in 6 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17380|app: 0|req: 43/306] 107.191.42.169 () {44 vars in 836 bytes} [Sun Apr 24 13:19:26 2016] GET / => generated 4742 bytes in 12 msecs (HTTP/1.1 200) 2 headers in 88 bytes (2 switches on core 0)
+[pid: 17379|app: 0|req: 169/307] 107.191.42.169 () {44 vars in 838 bytes} [Sun Apr 24 13:20:25 2016] GET /3/ => generated 12017 bytes in 6 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17388|app: 0|req: 77/308] 107.191.42.169 () {44 vars in 836 bytes} [Sun Apr 24 13:20:28 2016] GET / => generated 4742 bytes in 10 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 170/309] 107.191.42.169 () {44 vars in 838 bytes} [Sun Apr 24 13:22:06 2016] GET /3/ => generated 12017 bytes in 10 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17388|app: 0|req: 78/310] 107.191.42.169 () {44 vars in 906 bytes} [Sun Apr 24 13:22:14 2016] GET /admin/posts/posts/3/change/ => generated 16876 bytes in 33 msecs (HTTP/1.1 200) 7 headers in 373 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 171/311] 107.191.42.169 () {42 vars in 781 bytes} [Sun Apr 24 13:22:15 2016] GET /admin/jsi18n/ => generated 3217 bytes in 5 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
+[pid: 17380|app: 0|req: 44/312] 107.191.42.169 () {44 vars in 836 bytes} [Sun Apr 24 13:22:24 2016] GET / => generated 4742 bytes in 12 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 172/313] 107.191.42.169 () {44 vars in 892 bytes} [Sun Apr 24 13:22:31 2016] GET /admin/posts/posts/ => generated 4820 bytes in 28 msecs (HTTP/1.1 200) 7 headers in 373 bytes (1 switches on core 0)
+[pid: 17388|app: 0|req: 79/314] 107.191.42.169 () {44 vars in 906 bytes} [Sun Apr 24 13:22:33 2016] GET /admin/posts/posts/4/change/ => generated 12105 bytes in 30 msecs (HTTP/1.1 200) 7 headers in 373 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 173/315] 107.191.42.169 () {42 vars in 781 bytes} [Sun Apr 24 13:22:34 2016] GET /admin/jsi18n/ => generated 3217 bytes in 5 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
+[pid: 17388|app: 0|req: 80/316] 107.191.42.169 () {50 vars in 1137 bytes} [Sun Apr 24 13:25:57 2016] POST /admin/posts/posts/4/change/ => generated 0 bytes in 18 msecs (HTTP/1.1 302) 8 headers in 483 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 174/317] 107.191.42.169 () {44 vars in 1064 bytes} [Sun Apr 24 13:25:57 2016] GET /admin/posts/posts/ => generated 4972 bytes in 33 msecs (HTTP/1.1 200) 8 headers in 455 bytes (1 switches on core 0)
+[pid: 17388|app: 0|req: 81/318] 107.191.42.169 () {42 vars in 772 bytes} [Sun Apr 24 13:25:58 2016] GET /admin/jsi18n/ => generated 3217 bytes in 6 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 175/319] 107.191.42.169 () {44 vars in 836 bytes} [Sun Apr 24 13:26:01 2016] GET / => generated 4742 bytes in 13 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17388|app: 0|req: 82/320] 107.191.42.169 () {50 vars in 1137 bytes} [Sun Apr 24 13:26:03 2016] POST /admin/posts/posts/4/change/ => generated 0 bytes in 16 msecs (HTTP/1.1 302) 8 headers in 483 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 176/321] 107.191.42.169 () {44 vars in 836 bytes} [Sun Apr 24 13:26:12 2016] GET / => generated 4742 bytes in 16 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17388|app: 0|req: 83/322] 107.191.42.169 () {44 vars in 846 bytes} [Sun Apr 24 13:26:50 2016] GET /about/ => generated 2888 bytes in 2 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17387|app: 0|req: 8/323] 107.191.42.169 () {44 vars in 840 bytes} [Sun Apr 24 13:26:52 2016] GET / => generated 4742 bytes in 20 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+Not Found: /docs/funcspecs/3.jsp
+[pid: 17379|app: 0|req: 177/324] 61.161.130.242 () {36 vars in 526 bytes} [Sun Apr 24 13:56:57 2016] GET /docs/funcspecs/3.jsp => generated 2493 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 178/325] 107.191.42.169 () {44 vars in 846 bytes} [Sun Apr 24 14:39:50 2016] GET /about/ => generated 2888 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17388|app: 0|req: 84/326] 107.191.42.169 () {44 vars in 834 bytes} [Sun Apr 24 14:39:51 2016] GET / => generated 4742 bytes in 14 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 179/327] 107.191.42.169 () {44 vars in 834 bytes} [Sun Apr 24 14:39:58 2016] GET / => generated 4742 bytes in 17 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 180/328] 123.151.42.61 () {36 vars in 420 bytes} [Sun Apr 24 17:37:17 2016] GET / => generated 4742 bytes in 13 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 17379|app: 0|req: 181/329] 66.249.65.242 () {38 vars in 492 bytes} [Sun Apr 24 19:37:01 2016] GET /favicon.ico => generated 2470 bytes in 6 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /testproxy.php
+[pid: 17379|app: 0|req: 182/330] 185.25.151.159 () {38 vars in 617 bytes} [Sun Apr 24 20:18:44 2016] GET /testproxy.php => generated 2478 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 183/331] 173.208.197.252 () {32 vars in 493 bytes} [Sun Apr 24 21:11:05 2016] GET / => generated 4742 bytes in 19 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 184/332] 66.249.65.242 () {38 vars in 709 bytes} [Sun Apr 24 21:59:02 2016] GET / => generated 4742 bytes in 15 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 185/333] 107.150.32.62 () {32 vars in 491 bytes} [Sun Apr 24 22:17:10 2016] GET / => generated 4742 bytes in 13 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 186/334] 74.91.23.106 () {32 vars in 490 bytes} [Sun Apr 24 22:31:31 2016] GET / => generated 4742 bytes in 13 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 187/335] 52.38.140.186 () {26 vars in 277 bytes} [Sun Apr 24 22:49:45 2016] GET / => generated 4742 bytes in 17 msecs (HTTP/1.0 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 188/336] 185.93.185.252 () {32 vars in 392 bytes} [Sun Apr 24 23:32:38 2016] GET / => generated 4742 bytes in 14 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17388|app: 0|req: 85/337] 169.54.233.120 () {28 vars in 314 bytes} [Sun Apr 24 23:33:11 2016] GET / => generated 4742 bytes in 13 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+Not Found: /mobile/
+[pid: 17379|app: 0|req: 189/338] 66.249.65.228 () {38 vars in 723 bytes} [Sun Apr 24 23:52:33 2016] GET /mobile/ => generated 2458 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /manager/html
+[pid: 17379|app: 0|req: 190/339] 61.161.130.242 () {34 vars in 505 bytes} [Mon Apr 25 00:07:39 2016] GET /manager/html => generated 2472 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 17388|app: 0|req: 86/340] 121.42.0.33 () {38 vars in 599 bytes} [Mon Apr 25 00:09:59 2016] GET / => generated 4742 bytes in 15 msecs (HTTP/1.0 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 191/341] 121.42.0.34 () {38 vars in 602 bytes} [Mon Apr 25 00:23:32 2016] GET / => generated 4742 bytes in 14 msecs (HTTP/1.0 200) 2 headers in 88 bytes (1 switches on core 0)
+Not Found: /testproxy.php
+[pid: 17379|app: 0|req: 192/342] 91.196.50.33 () {38 vars in 615 bytes} [Mon Apr 25 03:19:48 2016] GET /testproxy.php => generated 2478 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 193/343] 5.39.222.159 () {30 vars in 371 bytes} [Mon Apr 25 03:34:50 2016] GET / => generated 4742 bytes in 13 msecs (HTTP/1.0 200) 2 headers in 88 bytes (1 switches on core 0)
+Not Found: /robots.txt
+[pid: 17379|app: 0|req: 194/344] 66.249.65.242 () {36 vars in 521 bytes} [Mon Apr 25 03:47:37 2016] GET /robots.txt => generated 2467 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /m/
+[pid: 17388|app: 0|req: 87/345] 66.249.65.235 () {38 vars in 713 bytes} [Mon Apr 25 03:47:37 2016] GET /m/ => generated 2443 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 195/346] 123.151.42.61 () {36 vars in 420 bytes} [Mon Apr 25 05:36:15 2016] GET / => generated 4742 bytes in 13 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+Not Found: /phpMyAdmin/scripts/setup.php
+[pid: 17379|app: 0|req: 196/347] 222.73.31.115 () {28 vars in 359 bytes} [Mon Apr 25 06:21:29 2016] GET /phpMyAdmin/scripts/setup.php => generated 2517 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /pma/scripts/setup.php
+[pid: 17388|app: 0|req: 88/348] 222.73.31.115 () {28 vars in 345 bytes} [Mon Apr 25 06:21:29 2016] GET /pma/scripts/setup.php => generated 2496 bytes in 8 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /myadmin/scripts/setup.php
+[pid: 17379|app: 0|req: 197/349] 222.73.31.115 () {28 vars in 353 bytes} [Mon Apr 25 06:21:29 2016] GET /myadmin/scripts/setup.php => generated 2508 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 17381|app: 0|req: 3/350] 107.191.42.169 () {40 vars in 697 bytes} [Mon Apr 25 06:43:07 2016] GET / => generated 4742 bytes in 73 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 17379|app: 0|req: 198/351] 107.191.42.169 () {40 vars in 655 bytes} [Mon Apr 25 06:43:10 2016] GET /favicon.ico => generated 2471 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 199/352] 107.191.42.169 () {40 vars in 696 bytes} [Mon Apr 25 07:00:28 2016] GET / => generated 4742 bytes in 16 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17388|app: 0|req: 89/353] 107.191.42.169 () {40 vars in 696 bytes} [Mon Apr 25 07:00:29 2016] GET / => generated 4742 bytes in 19 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 200/354] 107.191.42.169 () {40 vars in 696 bytes} [Mon Apr 25 07:00:40 2016] GET / => generated 4742 bytes in 15 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 17388|app: 0|req: 90/355] 107.191.42.169 () {40 vars in 653 bytes} [Mon Apr 25 07:00:41 2016] GET /favicon.ico => generated 2470 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (2 switches on core 0)
+[pid: 17380|app: 0|req: 45/356] 107.191.42.169 () {40 vars in 696 bytes} [Mon Apr 25 07:00:46 2016] GET / => generated 4742 bytes in 17 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 201/357] 107.191.42.169 () {40 vars in 696 bytes} [Mon Apr 25 07:00:48 2016] GET / => generated 4742 bytes in 13 msecs (HTTP/1.1 200) 2 headers in 88 bytes (2 switches on core 0)
+Not Found: /webdav/
+[pid: 17379|app: 0|req: 202/358] 192.99.144.140 () {34 vars in 399 bytes} [Mon Apr 25 08:54:17 2016] PROPFIND /webdav/ => generated 2459 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /robots.txt
+[pid: 17388|app: 0|req: 91/359] 109.169.29.30 () {42 vars in 609 bytes} [Mon Apr 25 08:56:44 2016] GET /robots.txt => generated 2467 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 203/360] 109.169.29.30 () {42 vars in 589 bytes} [Mon Apr 25 08:56:45 2016] GET / => generated 4742 bytes in 12 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17388|app: 0|req: 92/361] 109.169.29.30 () {42 vars in 601 bytes} [Mon Apr 25 08:56:53 2016] GET /about/ => generated 2888 bytes in 2 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17386|app: 0|req: 4/362] 109.169.29.30 () {42 vars in 593 bytes} [Mon Apr 25 08:56:55 2016] GET /1/ => generated 3851 bytes in 9 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 204/363] 218.241.108.158 () {34 vars in 520 bytes} [Mon Apr 25 14:52:01 2016] GET / => generated 4742 bytes in 14 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 205/364] 52.37.93.132 () {26 vars in 276 bytes} [Mon Apr 25 17:23:00 2016] GET / => generated 4742 bytes in 14 msecs (HTTP/1.0 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 206/365] 218.241.108.158 () {34 vars in 520 bytes} [Mon Apr 25 18:53:42 2016] GET / => generated 4742 bytes in 14 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+Not Found: /robots.txt
+[pid: 17379|app: 0|req: 207/366] 69.58.178.59 () {32 vars in 464 bytes} [Mon Apr 25 19:13:56 2016] GET /robots.txt => generated 2467 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 17388|app: 0|req: 93/367] 69.58.178.59 () {32 vars in 444 bytes} [Mon Apr 25 19:13:57 2016] GET / => generated 4742 bytes in 13 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 208/368] 69.58.178.59 () {32 vars in 456 bytes} [Mon Apr 25 19:13:58 2016] GET /about/ => generated 2888 bytes in 2 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17380|app: 0|req: 46/369] 69.58.178.59 () {32 vars in 448 bytes} [Mon Apr 25 19:13:59 2016] GET /1/ => generated 3851 bytes in 7 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 209/370] 69.58.178.59 () {32 vars in 448 bytes} [Mon Apr 25 19:14:00 2016] GET /3/ => generated 12017 bytes in 8 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17388|app: 0|req: 94/371] 69.58.178.59 () {32 vars in 448 bytes} [Mon Apr 25 19:14:02 2016] GET /4/ => generated 7602 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 210/372] 123.151.42.61 () {36 vars in 420 bytes} [Mon Apr 25 19:43:57 2016] GET / => generated 4742 bytes in 13 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+Not Found: /xmlrpc.php
+[pid: 17379|app: 0|req: 211/373] 89.248.174.4 () {28 vars in 322 bytes} [Mon Apr 25 21:47:15 2016] GET /xmlrpc.php => generated 2463 bytes in 7 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /cgi/common.cgi
+[pid: 17379|app: 0|req: 212/374] 201.172.103.51 () {32 vars in 380 bytes} [Mon Apr 25 22:30:26 2016] GET /cgi/common.cgi => generated 2475 bytes in 5 msecs (HTTP/1.0 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /stssys.htm
+[pid: 17388|app: 0|req: 95/375] 201.172.103.51 () {32 vars in 372 bytes} [Mon Apr 25 22:30:26 2016] GET /stssys.htm => generated 2463 bytes in 5 msecs (HTTP/1.0 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 17387|app: 0|req: 9/376] 201.172.103.51 () {32 vars in 352 bytes} [Mon Apr 25 22:30:27 2016] GET / => generated 4742 bytes in 14 msecs (HTTP/1.0 200) 2 headers in 88 bytes (1 switches on core 0)
+Not Found: /testproxy.php
+[pid: 17379|app: 0|req: 213/377] 185.25.148.240 () {38 vars in 617 bytes} [Mon Apr 25 23:12:29 2016] GET /testproxy.php => generated 2478 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 214/378] 121.42.0.35 () {38 vars in 603 bytes} [Mon Apr 25 23:39:34 2016] GET / => generated 4742 bytes in 14 msecs (HTTP/1.0 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 215/379] 121.42.0.33 () {38 vars in 598 bytes} [Tue Apr 26 00:14:19 2016] GET / => generated 4742 bytes in 14 msecs (HTTP/1.0 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 216/380] 121.42.0.34 () {38 vars in 603 bytes} [Tue Apr 26 00:26:02 2016] GET / => generated 4742 bytes in 13 msecs (HTTP/1.0 200) 2 headers in 88 bytes (1 switches on core 0)
+Not Found: /cgi-bin/test-cgi
+Tue Apr 26 00:37:59 2016 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request /cgi-bin/test-cgi (ip 98.126.212.154) !!!
+Tue Apr 26 00:37:59 2016 - uwsgi_response_writev_headers_and_body_do(): Broken pipe [core/writer.c line 296] during GET /cgi-bin/test-cgi (98.126.212.154)
+IOError: write error
+[pid: 17379|app: 0|req: 217/381] 98.126.212.154 () {28 vars in 397 bytes} [Tue Apr 26 00:37:59 2016] GET /cgi-bin/test-cgi => generated 0 bytes in 5 msecs (HTTP/1.0 404) 2 headers in 0 bytes (0 switches on core 0)
+[pid: 17379|app: 0|req: 218/382] 59.61.184.176 () {36 vars in 545 bytes} [Tue Apr 26 01:23:55 2016] GET / => generated 4742 bytes in 16 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+Not Found: /phpMyAdmin/scripts/setup.php
+[pid: 17379|app: 0|req: 219/383] 74.208.229.51 () {28 vars in 359 bytes} [Tue Apr 26 03:07:24 2016] GET /phpMyAdmin/scripts/setup.php => generated 2517 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /pma/scripts/setup.php
+[pid: 17388|app: 0|req: 96/384] 74.208.229.51 () {28 vars in 345 bytes} [Tue Apr 26 03:07:24 2016] GET /pma/scripts/setup.php => generated 2496 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /myadmin/scripts/setup.php
+[pid: 17380|app: 0|req: 47/385] 74.208.229.51 () {28 vars in 353 bytes} [Tue Apr 26 03:07:24 2016] GET /myadmin/scripts/setup.php => generated 2508 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /testproxy.php
+[pid: 17379|app: 0|req: 220/386] 91.196.50.33 () {38 vars in 615 bytes} [Tue Apr 26 03:12:10 2016] GET /testproxy.php => generated 2478 bytes in 6 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /xmlrpc.php
+[pid: 17384|app: 0|req: 2/387] 179.43.140.114 () {32 vars in 451 bytes} [Tue Apr 26 06:51:48 2016] GET /xmlrpc.php => generated 2463 bytes in 25 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /webdav/
+[pid: 17379|app: 0|req: 221/388] 192.99.144.140 () {34 vars in 399 bytes} [Tue Apr 26 07:28:29 2016] PROPFIND /webdav/ => generated 2459 bytes in 7 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 222/389] 123.151.42.61 () {36 vars in 420 bytes} [Tue Apr 26 07:43:49 2016] GET / => generated 4742 bytes in 21 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 223/390] 52.221.225.3 () {36 vars in 458 bytes} [Tue Apr 26 09:36:12 2016] GET / => generated 4742 bytes in 19 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+Not Found: /robots.txt
+[pid: 17379|app: 0|req: 224/391] 66.249.66.186 () {36 vars in 521 bytes} [Tue Apr 26 11:27:56 2016] GET /robots.txt => generated 2467 bytes in 7 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /m/
+[pid: 17388|app: 0|req: 97/392] 66.249.66.180 () {38 vars in 713 bytes} [Tue Apr 26 11:27:56 2016] GET /m/ => generated 2443 bytes in 6 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /mobile/
+[pid: 17379|app: 0|req: 225/393] 66.249.66.183 () {38 vars in 723 bytes} [Tue Apr 26 11:28:51 2016] GET /mobile/ => generated 2458 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 226/394] 218.241.108.158 () {34 vars in 520 bytes} [Tue Apr 26 12:31:13 2016] GET / => generated 4742 bytes in 13 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+Not Found: /testproxy.php
+[pid: 17379|app: 0|req: 227/395] 185.25.151.159 () {38 vars in 617 bytes} [Tue Apr 26 15:13:30 2016] GET /testproxy.php => generated 2478 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 228/396] 218.241.108.158 () {34 vars in 520 bytes} [Tue Apr 26 16:35:42 2016] GET / => generated 4742 bytes in 13 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+Not Found: /manager/html
+[pid: 17379|app: 0|req: 229/397] 202.109.143.18 () {36 vars in 484 bytes} [Tue Apr 26 18:18:14 2016] GET /manager/html => generated 2469 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 230/398] 123.151.42.61 () {36 vars in 420 bytes} [Tue Apr 26 21:18:08 2016] GET / => generated 4742 bytes in 19 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 231/399] 54.166.62.158 () {32 vars in 469 bytes} [Tue Apr 26 22:41:08 2016] GET / => generated 4742 bytes in 13 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 232/400] 120.132.95.89 () {34 vars in 445 bytes} [Tue Apr 26 23:13:38 2016] GET / => generated 4742 bytes in 13 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 233/401] 66.249.66.186 () {38 vars in 709 bytes} [Tue Apr 26 23:19:30 2016] GET / => generated 4742 bytes in 13 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 234/402] 121.42.0.33 () {38 vars in 604 bytes} [Tue Apr 26 23:38:39 2016] GET / => generated 4742 bytes in 13 msecs (HTTP/1.0 200) 2 headers in 88 bytes (1 switches on core 0)
+Not Found: /cgi-bin/test-cgi
+[pid: 17379|app: 0|req: 235/403] 173.227.0.76 () {36 vars in 446 bytes} [Wed Apr 27 00:08:59 2016] GET /cgi-bin/test-cgi => generated 2481 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 236/404] 121.42.0.33 () {38 vars in 599 bytes} [Wed Apr 27 00:18:56 2016] GET / => generated 4742 bytes in 14 msecs (HTTP/1.0 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 237/405] 158.69.228.18 () {32 vars in 431 bytes} [Wed Apr 27 03:24:44 2016] GET / => generated 4742 bytes in 13 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+Not Found: /robots.txt
+[pid: 17388|app: 0|req: 98/406] 89.163.145.224 () {26 vars in 299 bytes} [Wed Apr 27 03:27:26 2016] HEAD /robots.txt => generated 0 bytes in 5 msecs (HTTP/1.0 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /testproxy.php
+[pid: 17379|app: 0|req: 238/407] 185.25.151.159 () {38 vars in 617 bytes} [Wed Apr 27 04:00:32 2016] GET /testproxy.php => generated 2478 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /webdav/
+[pid: 17379|app: 0|req: 239/408] 192.99.144.140 () {34 vars in 399 bytes} [Wed Apr 27 05:59:06 2016] PROPFIND /webdav/ => generated 2459 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /xmlrpc.php
+[pid: 17379|app: 0|req: 240/409] 179.43.140.114 () {32 vars in 451 bytes} [Wed Apr 27 06:27:07 2016] GET /xmlrpc.php => generated 2463 bytes in 10 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /xmlrpc.php
+[pid: 17388|app: 0|req: 99/410] 179.43.140.114 () {32 vars in 451 bytes} [Wed Apr 27 06:28:52 2016] GET /xmlrpc.php => generated 2463 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 241/411] 123.151.42.61 () {36 vars in 420 bytes} [Wed Apr 27 09:18:02 2016] GET / => generated 4742 bytes in 30 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 242/412] 107.191.42.169 () {40 vars in 696 bytes} [Wed Apr 27 10:55:20 2016] GET / => generated 4742 bytes in 14 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17388|app: 0|req: 100/413] 107.191.42.169 () {42 vars in 735 bytes} [Wed Apr 27 10:55:23 2016] GET / => generated 4742 bytes in 14 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 17379|app: 0|req: 243/414] 107.191.42.169 () {40 vars in 653 bytes} [Wed Apr 27 10:55:24 2016] GET /favicon.ico => generated 2470 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /robots.txt
+[pid: 17379|app: 0|req: 244/415] 66.249.66.180 () {36 vars in 521 bytes} [Wed Apr 27 11:15:31 2016] GET /robots.txt => generated 2467 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 17388|app: 0|req: 101/416] 66.249.66.180 () {38 vars in 709 bytes} [Wed Apr 27 11:15:31 2016] GET / => generated 4742 bytes in 13 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 245/417] 218.241.108.158 () {34 vars in 520 bytes} [Wed Apr 27 11:56:28 2016] GET / => generated 4742 bytes in 19 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 246/418] 66.249.66.186 () {38 vars in 583 bytes} [Wed Apr 27 12:24:10 2016] GET / => generated 4742 bytes in 14 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17388|app: 0|req: 102/419] 66.249.66.183 () {38 vars in 587 bytes} [Wed Apr 27 12:26:16 2016] GET /3/ => generated 12017 bytes in 11 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+Not Found: /webdav/
+[pid: 17379|app: 0|req: 247/420] 192.99.144.140 () {34 vars in 399 bytes} [Wed Apr 27 13:09:09 2016] PROPFIND /webdav/ => generated 2459 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 248/421] 218.241.108.158 () {34 vars in 520 bytes} [Wed Apr 27 16:01:35 2016] GET / => generated 4742 bytes in 15 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 249/422] 123.151.42.61 () {36 vars in 420 bytes} [Wed Apr 27 16:40:14 2016] GET / => generated 4742 bytes in 15 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+Not Found: /xmlrpc.php
+[pid: 17379|app: 0|req: 250/423] 179.43.140.114 () {32 vars in 451 bytes} [Wed Apr 27 16:58:24 2016] GET /xmlrpc.php => generated 2463 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /xmlrpc.php
+[pid: 17388|app: 0|req: 103/424] 179.43.140.114 () {32 vars in 451 bytes} [Wed Apr 27 16:59:54 2016] GET /xmlrpc.php => generated 2463 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /robots.txt
+[pid: 17379|app: 0|req: 251/425] 206.183.1.74 () {38 vars in 663 bytes} [Wed Apr 27 19:11:59 2016] GET /robots.txt => generated 2467 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 17388|app: 0|req: 104/426] 206.183.1.74 () {38 vars in 643 bytes} [Wed Apr 27 19:11:59 2016] GET / => generated 4742 bytes in 14 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 252/427] 206.183.1.74 () {38 vars in 647 bytes} [Wed Apr 27 19:12:00 2016] GET /1/ => generated 3851 bytes in 8 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17388|app: 0|req: 105/428] 206.183.1.74 () {38 vars in 647 bytes} [Wed Apr 27 19:12:01 2016] GET /3/ => generated 12017 bytes in 8 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 253/429] 206.183.1.74 () {38 vars in 647 bytes} [Wed Apr 27 19:12:02 2016] GET /4/ => generated 7602 bytes in 10 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17388|app: 0|req: 106/430] 206.183.1.74 () {38 vars in 655 bytes} [Wed Apr 27 19:12:02 2016] GET /about/ => generated 2888 bytes in 2 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 254/431] 5.206.88.106 () {36 vars in 539 bytes} [Wed Apr 27 19:22:27 2016] GET /?uUABOtT1s => generated 4742 bytes in 14 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+Not Found: /phpMyAdmin/scripts/setup.php
+[pid: 17379|app: 0|req: 255/432] 123.56.180.190 () {28 vars in 360 bytes} [Wed Apr 27 21:43:53 2016] GET /phpMyAdmin/scripts/setup.php => generated 2517 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /pma/scripts/setup.php
+[pid: 17388|app: 0|req: 107/433] 123.56.180.190 () {28 vars in 346 bytes} [Wed Apr 27 21:43:53 2016] GET /pma/scripts/setup.php => generated 2496 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /myadmin/scripts/setup.php
+[pid: 17380|app: 0|req: 48/434] 123.56.180.190 () {28 vars in 354 bytes} [Wed Apr 27 21:43:53 2016] GET /myadmin/scripts/setup.php => generated 2508 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Wed Apr 27 22:20:46 2016 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request / (ip 180.201.32.6) !!!
+Wed Apr 27 22:20:46 2016 - uwsgi_response_writev_headers_and_body_do(): Broken pipe [core/writer.c line 296] during GET / (180.201.32.6)
+IOError: write error
+[pid: 17379|app: 0|req: 256/435] 180.201.32.6 () {32 vars in 647 bytes} [Wed Apr 27 22:20:46 2016] GET / => generated 0 bytes in 23 msecs (HTTP/1.1 200) 2 headers in 0 bytes (0 switches on core 0)
+[pid: 17379|app: 0|req: 257/436] 185.93.185.252 () {32 vars in 392 bytes} [Wed Apr 27 22:50:03 2016] GET / => generated 4742 bytes in 14 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 258/437] 121.42.0.35 () {38 vars in 604 bytes} [Thu Apr 28 01:08:06 2016] GET / => generated 4742 bytes in 14 msecs (HTTP/1.0 200) 2 headers in 88 bytes (1 switches on core 0)
+Not Found: /webdav/
+[pid: 17388|app: 0|req: 108/438] 192.99.144.140 () {34 vars in 399 bytes} [Thu Apr 28 01:11:14 2016] PROPFIND /webdav/ => generated 2459 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 259/439] 121.42.0.33 () {38 vars in 599 bytes} [Thu Apr 28 01:43:42 2016] GET / => generated 4742 bytes in 15 msecs (HTTP/1.0 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 260/440] 121.42.0.33 () {38 vars in 603 bytes} [Thu Apr 28 01:58:13 2016] GET / => generated 4742 bytes in 16 msecs (HTTP/1.0 200) 2 headers in 88 bytes (1 switches on core 0)
+Not Found: /robots.txt
+[pid: 17379|app: 0|req: 261/441] 66.249.77.68 () {36 vars in 520 bytes} [Thu Apr 28 04:06:00 2016] GET /robots.txt => generated 2467 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 17388|app: 0|req: 109/442] 66.249.77.74 () {38 vars in 586 bytes} [Thu Apr 28 04:06:00 2016] GET /4/ => generated 7602 bytes in 9 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 262/443] 123.151.42.61 () {36 vars in 420 bytes} [Thu Apr 28 04:39:55 2016] GET / => generated 4742 bytes in 13 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+Not Found: /phpMyAdmin/scripts/setup.php
+[pid: 17379|app: 0|req: 263/444] 110.84.129.110 () {28 vars in 360 bytes} [Thu Apr 28 06:44:06 2016] GET /phpMyAdmin/scripts/setup.php => generated 2517 bytes in 6 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 264/445] 66.249.77.80 () {38 vars in 582 bytes} [Thu Apr 28 08:24:54 2016] GET / => generated 4742 bytes in 17 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 265/446] 66.249.77.68 () {38 vars in 586 bytes} [Thu Apr 28 08:33:51 2016] GET /3/ => generated 12017 bytes in 11 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+Not Found: /phpMyAdmin/scripts/setup.php
+[pid: 17379|app: 0|req: 266/447] 185.81.155.250 () {28 vars in 360 bytes} [Thu Apr 28 11:13:21 2016] GET /phpMyAdmin/scripts/setup.php => generated 2517 bytes in 7 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /pma/scripts/setup.php
+[pid: 17388|app: 0|req: 110/448] 185.81.155.250 () {28 vars in 346 bytes} [Thu Apr 28 11:13:22 2016] GET /pma/scripts/setup.php => generated 2496 bytes in 7 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /myadmin/scripts/setup.php
+[pid: 17379|app: 0|req: 267/449] 185.81.155.250 () {28 vars in 354 bytes} [Thu Apr 28 11:13:22 2016] GET /myadmin/scripts/setup.php => generated 2508 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /robots.txt
+[pid: 17379|app: 0|req: 268/450] 107.150.43.218 () {26 vars in 299 bytes} [Thu Apr 28 13:22:56 2016] HEAD /robots.txt => generated 0 bytes in 7 msecs (HTTP/1.0 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /cache/global/img/gs.gif
+[pid: 17379|app: 0|req: 269/451] 80.82.78.38 () {32 vars in 428 bytes} [Thu Apr 28 16:01:48 2016] GET /cache/global/img/gs.gif => generated 2502 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /webdav/
+[pid: 17379|app: 0|req: 270/452] 192.99.144.140 () {34 vars in 399 bytes} [Thu Apr 28 18:10:01 2016] PROPFIND /webdav/ => generated 2459 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /robots.txt
+[pid: 17388|app: 0|req: 111/453] 180.97.106.162 () {30 vars in 359 bytes} [Thu Apr 28 18:14:58 2016] GET /robots.txt => generated 2463 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /testproxy.php
+[pid: 17379|app: 0|req: 271/454] 91.196.50.33 () {38 vars in 615 bytes} [Thu Apr 28 20:02:57 2016] GET /testproxy.php => generated 2478 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 272/455] 123.151.42.61 () {36 vars in 420 bytes} [Thu Apr 28 20:14:08 2016] GET / => generated 4742 bytes in 14 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+Not Found: /testproxy.php
+[pid: 17379|app: 0|req: 273/456] 185.25.148.240 () {38 vars in 617 bytes} [Thu Apr 28 20:56:05 2016] GET /testproxy.php => generated 2478 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /webdav/
+[pid: 17379|app: 0|req: 274/457] 192.99.144.140 () {34 vars in 399 bytes} [Thu Apr 28 21:43:58 2016] PROPFIND /webdav/ => generated 2459 bytes in 6 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 275/458] 121.42.0.33 () {38 vars in 603 bytes} [Fri Apr 29 00:37:20 2016] GET / => generated 4742 bytes in 14 msecs (HTTP/1.0 200) 2 headers in 88 bytes (1 switches on core 0)
+Not Found: /webdav/
+[pid: 17388|app: 0|req: 112/459] 192.99.144.140 () {34 vars in 399 bytes} [Fri Apr 29 00:40:18 2016] PROPFIND /webdav/ => generated 2459 bytes in 6 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /testproxy.php
+[pid: 17379|app: 0|req: 276/460] 185.25.148.240 () {38 vars in 617 bytes} [Fri Apr 29 01:42:39 2016] GET /testproxy.php => generated 2478 bytes in 8 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /testproxy.php
+[pid: 17379|app: 0|req: 277/461] 91.196.50.33 () {38 vars in 615 bytes} [Fri Apr 29 02:08:59 2016] GET /testproxy.php => generated 2478 bytes in 8 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /webdav/
+[pid: 17379|app: 0|req: 278/462] 192.99.144.140 () {34 vars in 399 bytes} [Fri Apr 29 04:25:56 2016] PROPFIND /webdav/ => generated 2459 bytes in 8 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /manager/html
+Fri Apr 29 06:02:46 2016 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request /manager/html (ip 117.21.173.36) !!!
+Fri Apr 29 06:02:46 2016 - uwsgi_response_writev_headers_and_body_do(): Broken pipe [core/writer.c line 296] during GET /manager/html (117.21.173.36)
+IOError: write error
+[pid: 17379|app: 0|req: 279/463] 117.21.173.36 () {36 vars in 483 bytes} [Fri Apr 29 06:02:46 2016] GET /manager/html => generated 0 bytes in 10 msecs (HTTP/1.1 404) 2 headers in 0 bytes (0 switches on core 0)
+Not Found: /manager/html
+[pid: 17388|app: 0|req: 113/464] 117.21.173.36 () {36 vars in 483 bytes} [Fri Apr 29 06:03:03 2016] GET /manager/html => generated 2469 bytes in 8 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 17382|app: 0|req: 5/465] 120.132.95.93 () {34 vars in 446 bytes} [Fri Apr 29 07:55:33 2016] GET / => generated 4742 bytes in 42 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+Not Found: /phpMyAdmin/scripts/setup.php
+[pid: 17379|app: 0|req: 280/466] 74.208.229.51 () {28 vars in 359 bytes} [Fri Apr 29 08:01:29 2016] GET /phpMyAdmin/scripts/setup.php => generated 2517 bytes in 7 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /pma/scripts/setup.php
+[pid: 17388|app: 0|req: 114/467] 74.208.229.51 () {28 vars in 345 bytes} [Fri Apr 29 08:01:29 2016] GET /pma/scripts/setup.php => generated 2496 bytes in 7 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /myadmin/scripts/setup.php
+[pid: 17379|app: 0|req: 281/468] 74.208.229.51 () {28 vars in 353 bytes} [Fri Apr 29 08:01:29 2016] GET /myadmin/scripts/setup.php => generated 2508 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 282/469] 123.151.42.61 () {36 vars in 420 bytes} [Fri Apr 29 08:14:12 2016] GET / => generated 4742 bytes in 22 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+Not Found: /webdav/
+[pid: 17379|app: 0|req: 283/470] 192.99.144.140 () {34 vars in 399 bytes} [Fri Apr 29 08:31:36 2016] PROPFIND /webdav/ => generated 2459 bytes in 6 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /images/G/01/x-locale/common/transparent-pixel._CB386942464_.gif
+[pid: 17379|app: 0|req: 284/471] 42.159.144.101 () {34 vars in 536 bytes} [Fri Apr 29 08:42:13 2016] GET /images/G/01/x-locale/common/transparent-pixel._CB386942464_.gif => generated 2632 bytes in 9 msecs (HTTP/1.0 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 285/472] 112.64.144.94 () {40 vars in 703 bytes} [Fri Apr 29 08:55:16 2016] GET / => generated 4742 bytes in 14 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 17388|app: 0|req: 115/473] 112.64.144.94 () {40 vars in 660 bytes} [Fri Apr 29 08:55:18 2016] GET /favicon.ico => generated 2470 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /testproxy.php
+[pid: 17379|app: 0|req: 286/474] 91.196.50.33 () {38 vars in 615 bytes} [Fri Apr 29 09:36:10 2016] GET /testproxy.php => generated 2478 bytes in 6 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 287/475] 64.16.209.152 () {26 vars in 287 bytes} [Fri Apr 29 09:47:58 2016] GET /admin => generated 0 bytes in 2 msecs (HTTP/1.0 301) 3 headers in 122 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 288/476] 120.132.95.90 () {34 vars in 446 bytes} [Fri Apr 29 10:06:02 2016] GET / => generated 4742 bytes in 22 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+Not Found: /webdav/
+[pid: 17379|app: 0|req: 289/477] 192.99.144.140 () {34 vars in 399 bytes} [Fri Apr 29 10:45:49 2016] PROPFIND /webdav/ => generated 2459 bytes in 6 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 290/478] 120.132.95.91 () {34 vars in 448 bytes} [Fri Apr 29 13:39:45 2016] GET / => generated 4742 bytes in 14 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+Not Found: /testproxy.php
+[pid: 17379|app: 0|req: 291/479] 185.49.14.190 () {38 vars in 616 bytes} [Fri Apr 29 14:23:02 2016] GET /testproxy.php => generated 2478 bytes in 6 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 292/480] 141.212.122.161 () {32 vars in 370 bytes} [Fri Apr 29 14:40:21 2016] GET / => generated 4742 bytes in 14 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 293/481] 123.151.42.61 () {36 vars in 420 bytes} [Fri Apr 29 19:08:39 2016] GET / => generated 4742 bytes in 13 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+Not Found: /robots.txt
+[pid: 17379|app: 0|req: 294/482] 66.249.79.19 () {36 vars in 520 bytes} [Fri Apr 29 22:26:27 2016] GET /robots.txt => generated 2467 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 17388|app: 0|req: 116/483] 66.249.79.16 () {38 vars in 708 bytes} [Fri Apr 29 22:26:27 2016] GET / => generated 4742 bytes in 14 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 295/484] 121.42.0.34 () {38 vars in 602 bytes} [Sat Apr 30 00:35:58 2016] GET / => generated 4742 bytes in 13 msecs (HTTP/1.0 200) 2 headers in 88 bytes (1 switches on core 0)
+Not Found: /webdav/
+[pid: 17379|app: 0|req: 296/485] 192.99.144.140 () {34 vars in 399 bytes} [Sat Apr 30 00:41:02 2016] PROPFIND /webdav/ => generated 2459 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /testproxy.php
+[pid: 17379|app: 0|req: 297/486] 185.49.14.190 () {38 vars in 616 bytes} [Sat Apr 30 02:46:20 2016] GET /testproxy.php => generated 2478 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /testproxy.php
+[pid: 17379|app: 0|req: 298/487] 185.25.148.240 () {38 vars in 617 bytes} [Sat Apr 30 03:04:32 2016] GET /testproxy.php => generated 2478 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /webdav/
+[pid: 17379|app: 0|req: 299/488] 192.99.144.140 () {34 vars in 399 bytes} [Sat Apr 30 05:24:28 2016] PROPFIND /webdav/ => generated 2459 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (2 switches on core 0)
+[pid: 17384|app: 0|req: 3/489] 123.151.42.61 () {36 vars in 420 bytes} [Sat Apr 30 07:07:49 2016] GET / => generated 4742 bytes in 46 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 300/490] 66.249.79.19 () {38 vars in 708 bytes} [Sat Apr 30 10:17:07 2016] GET / => generated 4742 bytes in 20 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+Not Found: /robots.txt
+[pid: 17379|app: 0|req: 301/491] 66.249.79.16 () {36 vars in 520 bytes} [Sat Apr 30 10:33:10 2016] GET /robots.txt => generated 2467 bytes in 6 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /skin/error.php
+[pid: 17379|app: 0|req: 302/492] 64.16.209.177 () {26 vars in 305 bytes} [Sat Apr 30 12:11:59 2016] GET /skin/error.php => generated 2471 bytes in 6 msecs (HTTP/1.0 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 303/493] 66.249.79.22 () {38 vars in 582 bytes} [Sat Apr 30 12:24:10 2016] GET / => generated 4742 bytes in 14 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+Not Found: /testproxy.php
+[pid: 17379|app: 0|req: 304/494] 185.25.148.240 () {38 vars in 617 bytes} [Sat Apr 30 15:03:43 2016] GET /testproxy.php => generated 2478 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 305/495] 182.118.55.207 () {32 vars in 470 bytes} [Sat Apr 30 17:14:19 2016] GET / => generated 4742 bytes in 13 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 306/496] 123.151.42.61 () {36 vars in 420 bytes} [Sat Apr 30 20:53:02 2016] GET / => generated 4742 bytes in 14 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+Not Found: /xmlrpc.php
+[pid: 17379|app: 0|req: 307/497] 179.43.140.114 () {32 vars in 451 bytes} [Sat Apr 30 21:24:39 2016] GET /xmlrpc.php => generated 2463 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /xmlrpc.php
+[pid: 17388|app: 0|req: 117/498] 179.43.140.114 () {32 vars in 451 bytes} [Sat Apr 30 21:26:25 2016] GET /xmlrpc.php => generated 2463 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /webdav/
+[pid: 17379|app: 0|req: 308/499] 192.99.144.140 () {34 vars in 399 bytes} [Sat Apr 30 21:42:41 2016] PROPFIND /webdav/ => generated 2459 bytes in 7 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 309/500] 64.16.209.190 () {30 vars in 372 bytes} [Sun May  1 01:05:49 2016] GET / => generated 4742 bytes in 13 msecs (HTTP/1.0 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 310/501] 123.157.77.157 () {40 vars in 690 bytes} [Sun May  1 01:35:47 2016] GET / => generated 4742 bytes in 13 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 17388|app: 0|req: 118/502] 123.157.77.157 () {40 vars in 647 bytes} [Sun May  1 01:36:08 2016] GET /favicon.ico => generated 2470 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (2 switches on core 0)
+[pid: 17380|app: 0|req: 49/503] 123.157.77.157 () {42 vars in 743 bytes} [Sun May  1 01:36:28 2016] GET /about/ => generated 2888 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 311/504] 123.157.77.157 () {42 vars in 737 bytes} [Sun May  1 01:36:29 2016] GET / => generated 4742 bytes in 11 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+Not Found: /testproxy.php
+[pid: 17379|app: 0|req: 312/505] 185.25.151.159 () {38 vars in 617 bytes} [Sun May  1 02:11:32 2016] GET /testproxy.php => generated 2478 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /robots.txt
+[pid: 17379|app: 0|req: 313/506] 66.249.79.16 () {36 vars in 520 bytes} [Sun May  1 02:45:24 2016] GET /robots.txt => generated 2467 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 314/507] 120.132.95.96 () {34 vars in 446 bytes} [Sun May  1 06:14:50 2016] GET / => generated 4742 bytes in 15 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+Not Found: /robots.txt
+[pid: 17379|app: 0|req: 315/508] 38.99.82.191 () {36 vars in 444 bytes} [Sun May  1 06:59:30 2016] GET /robots.txt => generated 2467 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 17388|app: 0|req: 119/509] 38.99.82.191 () {38 vars in 619 bytes} [Sun May  1 06:59:32 2016] GET / => generated 4742 bytes in 17 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+Not Found: /templates/ace/img/logo.png
+[pid: 17379|app: 0|req: 316/510] 106.185.54.118 () {28 vars in 358 bytes} [Sun May  1 07:37:27 2016] GET /templates/ace/img/logo.png => generated 2513 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /azenv.php
+[pid: 17379|app: 0|req: 317/511] 95.213.177.124 () {40 vars in 706 bytes} [Sun May  1 08:03:36 2016] POST /azenv.php?auth=146208981645&a=PSCMN&i=1815983438&p=80 => generated 2524 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 318/512] 123.151.42.61 () {36 vars in 420 bytes} [Sun May  1 08:52:08 2016] GET / => generated 4742 bytes in 13 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 319/513] 222.235.67.147 () {28 vars in 304 bytes} [Sun May  1 09:14:39 2016] GET / => generated 4742 bytes in 13 msecs (HTTP/1.0 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17388|app: 0|req: 120/514] 222.235.67.147 () {34 vars in 491 bytes} [Sun May  1 09:14:40 2016] GET / => generated 4742 bytes in 14 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+Not Found: /CHANGELOG.txt
+[pid: 17379|app: 0|req: 320/515] 222.235.67.147 () {34 vars in 517 bytes} [Sun May  1 09:14:41 2016] GET /CHANGELOG.txt => generated 2472 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 17380|app: 0|req: 50/516] 222.235.67.147 () {34 vars in 477 bytes} [Sun May  1 09:14:43 2016] GET / => generated 4742 bytes in 14 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+Not Found: /readme.html
+[pid: 17379|app: 0|req: 321/517] 222.235.67.147 () {34 vars in 499 bytes} [Sun May  1 09:14:44 2016] GET /readme.html => generated 2466 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 17388|app: 0|req: 121/518] 222.235.67.147 () {34 vars in 484 bytes} [Sun May  1 09:14:45 2016] GET / => generated 4742 bytes in 10 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+Not Found: /language/Swedish${IFS}&&echo${IFS}E3pM>2MrJ&&tar${IFS}/string.js
+[pid: 17379|app: 0|req: 322/519] 222.235.67.147 () {34 vars in 633 bytes} [Sun May  1 09:14:46 2016] GET /language/Swedish$%7BIFS%7D&&echo$%7BIFS%7DE3pM%3E2MrJ&&tar$%7BIFS%7D/string.js => generated 2693 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 17380|app: 0|req: 51/520] 222.235.67.147 () {34 vars in 484 bytes} [Sun May  1 09:14:48 2016] GET / => generated 4742 bytes in 10 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+Not Found: /manager/html
+[pid: 17379|app: 0|req: 323/521] 202.109.143.18 () {36 vars in 484 bytes} [Sun May  1 09:36:06 2016] GET /manager/html => generated 2469 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 324/522] 5.39.222.159 () {30 vars in 450 bytes} [Sun May  1 09:41:24 2016] GET / => generated 4742 bytes in 13 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+Not Found: /webdav/
+[pid: 17379|app: 0|req: 325/523] 192.99.144.140 () {34 vars in 399 bytes} [Sun May  1 11:02:15 2016] PROPFIND /webdav/ => generated 2459 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /webdav/
+[pid: 17379|app: 0|req: 326/524] 192.99.144.140 () {34 vars in 399 bytes} [Sun May  1 13:11:47 2016] PROPFIND /webdav/ => generated 2459 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /testproxy.php
+[pid: 17379|app: 0|req: 327/525] 185.25.151.159 () {38 vars in 617 bytes} [Sun May  1 13:48:08 2016] GET /testproxy.php => generated 2478 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 328/526] 123.157.77.157 () {40 vars in 691 bytes} [Sun May  1 15:02:36 2016] GET / => generated 4742 bytes in 14 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 17388|app: 0|req: 122/527] 123.157.77.157 () {40 vars in 649 bytes} [Sun May  1 15:02:37 2016] GET /favicon.ico => generated 2471 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (2 switches on core 0)
+[pid: 17379|app: 0|req: 329/528] 222.85.138.75 () {34 vars in 536 bytes} [Sun May  1 15:07:40 2016] HEAD / => generated 0 bytes in 13 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+Not Found: /cache/global/img/gs.gif
+[pid: 17379|app: 0|req: 330/529] 80.82.78.38 () {32 vars in 428 bytes} [Sun May  1 16:14:49 2016] GET /cache/global/img/gs.gif => generated 2502 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /NULL.printer
+[pid: 17379|app: 0|req: 331/530] 69.17.120.17 () {26 vars in 291 bytes} [Sun May  1 17:29:15 2016] GET /NULL.printer => generated 2465 bytes in 6 msecs ( 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /webdav/
+[pid: 17379|app: 0|req: 332/531] 192.99.144.140 () {34 vars in 399 bytes} [Sun May  1 18:07:43 2016] PROPFIND /webdav/ => generated 2459 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /robots.txt
+[pid: 17379|app: 0|req: 333/532] 38.99.82.191 () {36 vars in 444 bytes} [Sun May  1 18:43:54 2016] GET /robots.txt => generated 2467 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 17388|app: 0|req: 123/533] 38.99.82.191 () {38 vars in 623 bytes} [Sun May  1 18:44:13 2016] GET /4/ => generated 7602 bytes in 10 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 334/534] 38.99.82.191 () {38 vars in 623 bytes} [Sun May  1 18:44:52 2016] GET /3/ => generated 12017 bytes in 9 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17388|app: 0|req: 124/535] 38.99.82.191 () {38 vars in 623 bytes} [Sun May  1 18:45:19 2016] GET /1/ => generated 3851 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17380|app: 0|req: 52/536] 38.99.82.191 () {38 vars in 631 bytes} [Sun May  1 18:45:21 2016] GET /about/ => generated 2888 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 335/537] 198.101.238.203 () {36 vars in 578 bytes} [Sun May  1 19:21:45 2016] GET / => generated 4742 bytes in 13 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+Not Found: /robots.txt
+[pid: 17379|app: 0|req: 336/538] 38.99.82.191 () {36 vars in 444 bytes} [Sun May  1 20:22:07 2016] GET /robots.txt => generated 2467 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 17388|app: 0|req: 125/539] 38.99.82.191 () {38 vars in 630 bytes} [Sun May  1 20:22:20 2016] GET /about/ => generated 2888 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 337/540] 123.151.42.61 () {36 vars in 420 bytes} [Sun May  1 21:26:19 2016] GET / => generated 4742 bytes in 13 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+Not Found: /webdav/
+[pid: 17379|app: 0|req: 338/541] 192.99.144.140 () {34 vars in 399 bytes} [Sun May  1 23:35:40 2016] PROPFIND /webdav/ => generated 2459 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 339/542] 121.42.0.33 () {38 vars in 602 bytes} [Mon May  2 00:43:29 2016] GET / => generated 4742 bytes in 13 msecs (HTTP/1.0 200) 2 headers in 88 bytes (1 switches on core 0)
+Not Found: /testproxy.php
+[pid: 17379|app: 0|req: 340/543] 185.49.14.190 () {38 vars in 616 bytes} [Mon May  2 01:41:19 2016] GET /testproxy.php => generated 2478 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /webdav/
+[pid: 17379|app: 0|req: 341/544] 192.99.144.140 () {34 vars in 399 bytes} [Mon May  2 02:30:27 2016] PROPFIND /webdav/ => generated 2459 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (2 switches on core 0)
+Not Found: /webdav/
+[pid: 17379|app: 0|req: 342/545] 192.99.144.140 () {34 vars in 399 bytes} [Mon May  2 03:53:44 2016] PROPFIND /webdav/ => generated 2459 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /webdav/
+[pid: 17379|app: 0|req: 343/546] 192.99.144.140 () {34 vars in 399 bytes} [Mon May  2 04:10:25 2016] PROPFIND /webdav/ => generated 2459 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 344/547] 123.151.42.61 () {36 vars in 420 bytes} [Mon May  2 09:26:10 2016] GET / => generated 4742 bytes in 18 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+Not Found: /testproxy.php
+[pid: 17379|app: 0|req: 345/548] 185.49.14.190 () {38 vars in 616 bytes} [Mon May  2 09:37:17 2016] GET /testproxy.php => generated 2478 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /testproxy.php
+[pid: 17379|app: 0|req: 346/549] 185.25.151.159 () {38 vars in 617 bytes} [Mon May  2 12:45:33 2016] GET /testproxy.php => generated 2478 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /webdav/
+[pid: 17379|app: 0|req: 347/550] 192.99.144.140 () {34 vars in 399 bytes} [Mon May  2 14:03:47 2016] PROPFIND /webdav/ => generated 2459 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /azenv.php
+[pid: 17379|app: 0|req: 348/551] 95.213.177.126 () {40 vars in 706 bytes} [Mon May  2 14:43:52 2016] POST /azenv.php?auth=146220023235&a=PSCMN&i=1815983438&p=80 => generated 2524 bytes in 7 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 349/552] 120.132.95.96 () {34 vars in 448 bytes} [Mon May  2 15:28:34 2016] GET / => generated 4742 bytes in 14 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+Not Found: /webdav/
+[pid: 17379|app: 0|req: 350/553] 192.99.144.140 () {34 vars in 399 bytes} [Mon May  2 16:43:40 2016] PROPFIND /webdav/ => generated 2459 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 351/554] 123.151.42.61 () {36 vars in 420 bytes} [Mon May  2 16:56:23 2016] GET / => generated 4742 bytes in 17 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+Not Found: /phpMyAdmin/scripts/setup.php
+[pid: 17379|app: 0|req: 352/555] 203.201.161.178 () {28 vars in 361 bytes} [Mon May  2 17:19:39 2016] GET /phpMyAdmin/scripts/setup.php => generated 2517 bytes in 6 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /pma/scripts/setup.php
+[pid: 17388|app: 0|req: 126/556] 203.201.161.178 () {28 vars in 347 bytes} [Mon May  2 17:19:40 2016] GET /pma/scripts/setup.php => generated 2496 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /myadmin/scripts/setup.php
+[pid: 17380|app: 0|req: 53/557] 203.201.161.178 () {28 vars in 355 bytes} [Mon May  2 17:19:40 2016] GET /myadmin/scripts/setup.php => generated 2508 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 353/558] 185.93.185.252 () {32 vars in 392 bytes} [Mon May  2 18:24:31 2016] GET / => generated 4742 bytes in 21 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 354/559] 222.95.249.141 () {32 vars in 356 bytes} [Mon May  2 19:45:22 2016] GET / => generated 4742 bytes in 14 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 355/560] 107.150.46.37 () {32 vars in 495 bytes} [Mon May  2 20:25:33 2016] GET / => generated 4742 bytes in 13 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+Not Found: /webdav/
+[pid: 17379|app: 0|req: 356/561] 192.99.144.140 () {34 vars in 399 bytes} [Mon May  2 23:03:32 2016] PROPFIND /webdav/ => generated 2459 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /azenv.php
+[pid: 17379|app: 0|req: 357/562] 95.213.177.124 () {40 vars in 706 bytes} [Mon May  2 23:26:02 2016] POST /azenv.php?auth=146223156291&a=PSCMN&i=1815983438&p=80 => generated 2524 bytes in 6 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 358/563] 121.42.0.33 () {38 vars in 603 bytes} [Tue May  3 00:41:13 2016] GET / => generated 4742 bytes in 13 msecs (HTTP/1.0 200) 2 headers in 88 bytes (1 switches on core 0)
+Not Found: /testproxy.php
+[pid: 17379|app: 0|req: 359/564] 185.49.14.190 () {38 vars in 616 bytes} [Tue May  3 01:00:24 2016] GET /testproxy.php => generated 2478 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /webdav/
+[pid: 17379|app: 0|req: 360/565] 192.99.144.140 () {34 vars in 399 bytes} [Tue May  3 05:38:16 2016] PROPFIND /webdav/ => generated 2459 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /webdav/
+[pid: 17388|app: 0|req: 127/566] 192.99.144.140 () {34 vars in 399 bytes} [Tue May  3 05:39:43 2016] PROPFIND /webdav/ => generated 2459 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 361/567] 123.59.59.52 () {34 vars in 447 bytes} [Tue May  3 06:26:17 2016] GET / => generated 4742 bytes in 14 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+Not Found: /robots.txt
+[pid: 17384|app: 0|req: 4/568] 66.249.79.19 () {36 vars in 520 bytes} [Tue May  3 09:30:30 2016] GET /robots.txt => generated 2467 bytes in 30 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 362/569] 66.249.79.16 () {38 vars in 708 bytes} [Tue May  3 09:30:31 2016] GET / => generated 4742 bytes in 22 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+Not Found: /cache/global/img/gs.gif
+[pid: 17379|app: 0|req: 363/570] 80.82.78.38 () {32 vars in 428 bytes} [Tue May  3 09:58:56 2016] GET /cache/global/img/gs.gif => generated 2502 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 364/571] 66.249.79.19 () {38 vars in 582 bytes} [Tue May  3 12:24:11 2016] GET / => generated 4742 bytes in 14 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+Not Found: /testproxy.php
+[pid: 17379|app: 0|req: 365/572] 91.196.50.33 () {38 vars in 615 bytes} [Tue May  3 13:07:13 2016] GET /testproxy.php => generated 2478 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 366/573] 141.212.122.145 () {32 vars in 370 bytes} [Tue May  3 14:03:55 2016] GET / => generated 4742 bytes in 14 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 367/574] 118.193.27.5 () {28 vars in 305 bytes} [Tue May  3 14:09:26 2016] GET / => generated 4742 bytes in 13 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 368/575] 120.132.95.91 () {34 vars in 446 bytes} [Tue May  3 18:29:48 2016] GET / => generated 4742 bytes in 14 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17388|app: 0|req: 128/576] 120.132.50.135 () {34 vars in 446 bytes} [Tue May  3 18:34:02 2016] GET / => generated 4742 bytes in 15 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 369/577] 123.151.42.61 () {36 vars in 420 bytes} [Tue May  3 18:54:53 2016] GET / => generated 4742 bytes in 14 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 370/578] 66.249.64.240 () {38 vars in 721 bytes} [Tue May  3 21:19:17 2016] GET /about/ => generated 2888 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+Not Found: /webdav/
+[pid: 17379|app: 0|req: 371/579] 192.99.144.140 () {34 vars in 399 bytes} [Tue May  3 23:51:36 2016] PROPFIND /webdav/ => generated 2459 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 372/580] 107.150.46.35 () {32 vars in 495 bytes} [Tue May  3 23:55:50 2016] GET / => generated 4742 bytes in 15 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 373/581] 121.42.0.33 () {38 vars in 603 bytes} [Wed May  4 00:35:40 2016] GET / => generated 4742 bytes in 14 msecs (HTTP/1.0 200) 2 headers in 88 bytes (1 switches on core 0)
+Not Found: /testproxy.php
+[pid: 17379|app: 0|req: 374/582] 91.196.50.33 () {38 vars in 615 bytes} [Wed May  4 01:29:08 2016] GET /testproxy.php => generated 2478 bytes in 6 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 17388|app: 0|req: 129/583] 123.59.67.149 () {34 vars in 445 bytes} [Wed May  4 01:30:43 2016] GET / => generated 4742 bytes in 16 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+Not Found: /robots.txt
+[pid: 17379|app: 0|req: 375/584] 66.249.64.240 () {36 vars in 521 bytes} [Wed May  4 03:10:00 2016] GET /robots.txt => generated 2467 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 17388|app: 0|req: 130/585] 66.249.64.240 () {38 vars in 709 bytes} [Wed May  4 03:10:01 2016] GET / => generated 4742 bytes in 19 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+Not Found: /webdav/
+[pid: 17379|app: 0|req: 376/586] 192.99.144.140 () {34 vars in 399 bytes} [Wed May  4 05:09:24 2016] PROPFIND /webdav/ => generated 2459 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /webdav/
+[pid: 17382|app: 0|req: 6/587] 192.99.144.140 () {34 vars in 399 bytes} [Wed May  4 07:46:08 2016] PROPFIND /webdav/ => generated 2459 bytes in 32 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /testproxy.php
+[pid: 17379|app: 0|req: 377/588] 185.49.14.190 () {38 vars in 616 bytes} [Wed May  4 08:24:28 2016] GET /testproxy.php => generated 2478 bytes in 6 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 17388|app: 0|req: 131/589] 66.249.64.245 () {38 vars in 583 bytes} [Wed May  4 08:24:54 2016] GET / => generated 4742 bytes in 21 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+Not Found: /webdav/
+[pid: 17379|app: 0|req: 378/590] 192.99.144.140 () {34 vars in 399 bytes} [Wed May  4 08:32:49 2016] PROPFIND /webdav/ => generated 2459 bytes in 6 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /testproxy.php
+[pid: 17379|app: 0|req: 379/591] 185.49.14.190 () {38 vars in 616 bytes} [Wed May  4 13:02:03 2016] GET /testproxy.php => generated 2478 bytes in 6 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /robots.txt
+[pid: 17379|app: 0|req: 380/592] 94.102.48.195 () {30 vars in 392 bytes} [Wed May  4 14:10:21 2016] GET /robots.txt => generated 2459 bytes in 5 msecs (HTTP/1.0 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /webdav/
+[pid: 17379|app: 0|req: 381/593] 192.99.144.140 () {34 vars in 399 bytes} [Wed May  4 17:25:33 2016] PROPFIND /webdav/ => generated 2459 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /manager/html
+[pid: 17379|app: 0|req: 382/594] 202.109.143.18 () {36 vars in 484 bytes} [Wed May  4 18:32:54 2016] GET /manager/html => generated 2469 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /manager/html
+[pid: 17388|app: 0|req: 132/595] 202.109.143.18 () {36 vars in 484 bytes} [Wed May  4 18:36:28 2016] GET /manager/html => generated 2469 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 383/596] 123.151.42.61 () {36 vars in 420 bytes} [Wed May  4 22:18:00 2016] GET / => generated 4742 bytes in 19 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+Not Found: /webdav/
+[pid: 17388|app: 0|req: 133/597] 192.99.144.140 () {34 vars in 399 bytes} [Wed May  4 22:21:17 2016] PROPFIND /webdav/ => generated 2459 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /webdav/
+[pid: 17379|app: 0|req: 384/598] 192.99.144.140 () {34 vars in 399 bytes} [Wed May  4 23:45:23 2016] PROPFIND /webdav/ => generated 2459 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /testproxy.php
+[pid: 17379|app: 0|req: 385/599] 91.196.50.33 () {38 vars in 615 bytes} [Thu May  5 00:14:56 2016] GET /testproxy.php => generated 2478 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 386/600] 121.42.0.34 () {38 vars in 603 bytes} [Thu May  5 00:37:19 2016] GET / => generated 4742 bytes in 15 msecs (HTTP/1.0 200) 2 headers in 88 bytes (1 switches on core 0)
+Not Found: /cache/global/img/gs.gif
+[pid: 17379|app: 0|req: 387/601] 80.82.78.38 () {32 vars in 428 bytes} [Thu May  5 03:20:17 2016] GET /cache/global/img/gs.gif => generated 2502 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /images/G/01/x-locale/common/transparent-pixel._CB386942464_.gif
+[pid: 17379|app: 0|req: 388/602] 42.159.144.101 () {34 vars in 536 bytes} [Thu May  5 04:17:12 2016] GET /images/G/01/x-locale/common/transparent-pixel._CB386942464_.gif => generated 2632 bytes in 5 msecs (HTTP/1.0 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /webdav/
+[pid: 17379|app: 0|req: 389/603] 192.99.144.140 () {34 vars in 399 bytes} [Thu May  5 04:47:05 2016] PROPFIND /webdav/ => generated 2459 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /webdav/
+[pid: 17379|app: 0|req: 390/604] 192.99.144.140 () {34 vars in 399 bytes} [Thu May  5 04:59:56 2016] PROPFIND /webdav/ => generated 2459 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 391/605] 121.42.0.33 () {38 vars in 603 bytes} [Thu May  5 06:39:20 2016] GET / => generated 4742 bytes in 18 msecs (HTTP/1.0 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 392/606] 118.193.27.5 () {28 vars in 305 bytes} [Thu May  5 07:38:48 2016] GET / => generated 4742 bytes in 16 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+Not Found: /webdav/
+[pid: 17379|app: 0|req: 393/607] 192.99.144.140 () {34 vars in 399 bytes} [Thu May  5 08:35:53 2016] PROPFIND /webdav/ => generated 2459 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 394/608] 123.151.42.61 () {36 vars in 420 bytes} [Thu May  5 10:17:55 2016] GET / => generated 4742 bytes in 17 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+Not Found: /testproxy.php
+[pid: 17379|app: 0|req: 395/609] 185.25.151.159 () {38 vars in 617 bytes} [Thu May  5 12:03:15 2016] GET /testproxy.php => generated 2478 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 17379|app: 0|req: 396/610] 140.207.81.100 () {40 vars in 689 bytes} [Thu May  5 14:23:46 2016] GET / => generated 4742 bytes in 13 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 17388|app: 0|req: 134/611] 140.207.81.100 () {40 vars in 646 bytes} [Thu May  5 14:23:46 2016] GET /favicon.ico => generated 2470 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (2 switches on core 0)
+[pid: 17380|app: 0|req: 54/612] 140.207.81.100 () {42 vars in 742 bytes} [Thu May  5 14:23:53 2016] GET /about/ => generated 2888 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
