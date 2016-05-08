@@ -23,6 +23,7 @@ class Posts(models.Model):
     
     class Meta:
         verbose_name = '文章'
+        ordering = ['-id']
     
     def __unicode__(self):
         return self.title
