@@ -7,7 +7,7 @@ import models
 
 class Posts_list(ListView):
     model = models.Posts
-    paginate_by = 10 
+    paginate_by = 5 
     context_object_name = 'posts'
     
 
