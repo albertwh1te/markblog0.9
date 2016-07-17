@@ -1,22 +1,26 @@
 {% extends "base.html" %}
 
-{% block title %} Mark's House {% endblock %}
+
+{% block title %} MarkWh1te Personal Website {% endblock %}
 {% block content %}
 <center>
 <ul>
-{% for article in object_list %}
+{% for post in posts %}
 {% load markdown_deux_tags %} 
-  <a class="list_text" href="{% url 'posts_detail' article.id %}">
+  <a class="list_text" href="{% url 'posts_detail' post.id %}">
     <div class="jumbotron">
-      <h1>{{ article.title }}</h1>
+      <h1>{{ post.title }}</h1>
     </a>
-      <x>  {{ article.create_time |date }} </x>
-      <x >{{ article.content|markdown|truncatechars:300  }}</x>
-      <a class="btn btn-default btn-sm" href="{% url 'posts_detail' article.id %}" role="button">read more</a> 
+      <x>  {{ post.create_time |date }} </x>
+      <x >{{ post.content|markdown|truncatechars:300  }}</x>
+      <a class="btn btn-default btn-sm" href="{% url 'posts_detail' post.id %}" role="button">read more</a> 
     </div>
 {% empty %}
     <a>No articles yet.</a>
 {% endfor %}
 </ul>
+
+{% load bootstrap_pagination %}
+{% bootstrap_paginate page_obj %}
 </center>
 {% endblock %}

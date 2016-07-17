@@ -12,7 +12,7 @@ class PostsAdmin(admin.ModelAdmin):
     formfield_overrides = {
         models.TextField: {'widget': AdminPagedownWidget},
     }
-    
+
     class Meta:
         model = Posts
 

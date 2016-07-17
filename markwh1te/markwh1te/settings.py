@@ -40,6 +40,8 @@ INSTALLED_APPS = (
     'pagedown',
     'markdown_deux',
     'posts',
+    'autofixture',
+    'bootstrap_pagination',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -55,8 +57,7 @@ MIDDLEWARE_CLASSES = (
 
 ROOT_URLCONF = 'markwh1te.urls'
 
-TEMPLATES = [
-    {
+TEMPLATES = [ {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [os.path.join(BASE_DIR, 'templates')],
         'APP_DIRS': True,
@@ -104,9 +105,9 @@ USE_TZ = True
 
 
 STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'deploy_static')
 MEDIA_ROOT = os.path.join(BASE_DIR, 'static')
 STATICFILES_DIRS = (
         MEDIA_ROOT,
-        BASE_DIR,
         )
     

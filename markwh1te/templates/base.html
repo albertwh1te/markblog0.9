@@ -22,17 +22,24 @@
     <nav class="navbar navbar-custom navbar-default">
         <div class="container-fluid">
             <div class="navbar-header ">
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="{% url 'posts_list' %}">Mark's House </a>  
+	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+	    <span class="sr-only">Toggle navigation</span>
+	    <span class="icon-bar"></span>
+	    <span class="icon-bar"></span>
+	  </button>
               </div>
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<a class="navbar-brand navbar-left" href="{% url 'posts_list' %}">MarkWh1te Personal Website </a>
+		</ul>	
+                <ul class="nav navbar-nav "> 
+                  <li><a class="headname" href="{% url 'home' %}">Home </a></li>
+		</ul>
                 <ul class="nav navbar-nav"> 
-                  <li><a class="headname" href="{% url 'posts_list' %}">Home </a></li>
+                  <li><a class="headname" href="{% url 'posts_list' %}">Blog </a></li>
+		</ul>
+                <ul class="nav navbar-nav"> 
                   <li><a class="headname" href="{% url 'about' %}">About</a></li>
+		</ul>
             </div>
         
     </nav>
@@ -46,13 +53,12 @@
     <script src="/static/jquery-1.12.2.min.js"></script>
     <script src="/static/bootstrap.min.js"></script>
 </body>
-<footer>
-<p> 
-<DIV >
-作者： <A href="http://www.markwh1te.com">MarkWhite</A> <BR>
-出处： <A href="http://www.markwh1te.com">www.markwh1te.com</A> 
-<BR>原创文章，版权声明：自由转载-非商用-非衍生-保持署名
-<a href= "http://creativecommons.org/licenses/by-nc-nd/3.0/deed.zh"> Creative Commons BY-NC-ND 3.0 </a>。 
-</DIV>
-</p>
+<div style="font-size: 90%" align="center"><p>Please contact
+	<a href="mailto:iammarkwh1te@gmail.com">iammakwh1te@outlook.com</a>
+
+	<!-- STOP -->
+
+	<br />
+	with your questions, comments, and suggestions.</p>
+	Copyright &copy; <a href="/">MarkWh1te Personal Website</a>. All rights reserved.</p></div>
 </html>
