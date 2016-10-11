@@ -42,9 +42,15 @@
 		</ul>
                 <ul class="nav navbar-nav"> 
                   <li><a class="headname" href="{% url 'about' %}">About</a></li>
-		</ul>
-            </div>
-        
+		            </ul>
+                      <form method="get" action="{% url 'posts_list' %}" class="navbar-form navbar-left" >
+        <div class="form-group">
+          <input type="text" class="form-control" name="keyword">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+</div>
+       
     </nav>
     <div class="container">
     {% block content %}

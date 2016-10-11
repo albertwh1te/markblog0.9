@@ -1,12 +1,12 @@
 {% extends "base.html" %}
 
-
 {% block title %} MarkWh1te Personal Website {% endblock %}
 {% block content %}
 <center>
 <ul>
 {% for post in posts %}
-{% load markdown_deux_tags %} 
+{% load markdown_deux_tags %}
+
   <a class="list_text" href="{% url 'posts_detail' post.id %}">
     <div class="jumbotron">
       <h1>{{ post.title }}</h1>
