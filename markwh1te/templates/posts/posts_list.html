@@ -7,8 +7,8 @@
 {% for post in posts %}
 {% load markdown_deux_tags %}
 
+ <div class="jumbotron">
   <a class="list_text" href="{% url 'posts_detail' post.id %}">
-    <div class="jumbotron">
       <h1>{{ post.title }}</h1>
     </a>
       <x>  {{ post.create_time |date }} </x>
