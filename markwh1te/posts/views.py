@@ -11,7 +11,6 @@ class Posts_list(ListView):
     context_object_name = 'posts'
 
     def get_queryset(self):
-        print self.request.GET.get('keyword',None)
         keyword = self.request.GET.get('keyword', None)
         if keyword:
             object_list = self.models.objects.filter(title__contains=keyword)
