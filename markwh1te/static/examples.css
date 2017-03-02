@@ -8,7 +8,9 @@ form,fieldset,input,textarea,p,blockquote,th,td {
 }
 a{
 	text-decoration:none;
+  font-size:2.5em;
 }
+
 table {
     border-spacing: 0;
 }

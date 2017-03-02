@@ -9,7 +9,6 @@
 
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>{% block title %}{% endblock %}</title>
-    
     <link rel="icon" href="/static/favicon.png">
     <!-- Bootstrap -->
     <link href="/static/bootstrap.min.css" rel="stylesheet">
@@ -32,33 +31,30 @@
 	  </button>
               </div>
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-			<a class="navbar-brand navbar-left" href="{% url 'posts_list' %}">MarkWh1te Personal Website </a>
-		</ul>	
-                <ul class="nav navbar-nav "> 
+		</ul>
+                <ul class="nav navbar-nav ">
                   <li><a class="headname" href="{% url 'home' %}">Home </a></li>
 		</ul>
-                <ul class="nav navbar-nav"> 
+                <ul class="nav navbar-nav">
                   <li><a class="headname" href="{% url 'posts_list' %}">Blog </a></li>
 		</ul>
-                <ul class="nav navbar-nav"> 
+                <ul class="nav navbar-nav">
                   <li><a class="headname" href="{% url 'about' %}">About</a></li>
 		            </ul>
-                <ul class="nav navbar-nav"> 
+                <ul class="nav navbar-nav">
                   <li><a class="headname" href="{% url 'archieve' %}">Archieve</a></li>
 		            </ul>
-                <ul class="nav navbar-nav"> 
+                <ul class="nav navbar-nav">
                   <li><a class="headname" href="http://markwh1te.github.io/">Wiki</a></li>
 		            </ul>
-
                       <form method="get" action="{% url 'posts_list' %}" class="navbar-form navbar-left" >
         <div class="form-group">
           <input type="text" class="form-control" name="keyword">
         </div>
-        <button type="submit" class="btn btn-default">Submit</button>
+        <button type="submit" class="btn btn-default">Search</button>
       </form>
 </div>
-       
-    </nav>
+</nav>
     <div class="container">
     {% block content %}
     {% endblock %}
